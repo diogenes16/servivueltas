@@ -1,0 +1,519 @@
+/*
+Theme Name: Kallyas
+Theme URI: http://kallyas.net/
+Description: A Highly customizable theme with page builder and unlimited colors.
+Author: Hogash
+Author URI: http://themeforest.net/user/hogash
+Version: 4.0.11
+Tags: dark, light, left-sidebar, right-sidebar, fluid-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, full-width-template, theme-options, translation-ready
+License: GNU General Public License
+License URI: license.txt
+Text Domain: zn_framework
+*/
+.TK{
+display: none;
+}
+.site-footer-bottom {
+    padding-top: 30px;
+    border-top: none !important;
+    color: #8b8c8d;
+}
+.site-footer {
+    background: #2f2f2f;
+    padding: 0px 0 0px !important;
+    color: #d5d5d5;
+    border-top: 4px solid #fff;
+    position: relative;
+}
+.sh-component.kl-header-toptext.kl-font-alt {
+    display: block !important;
+}
+
+
+@media (min-width: 768px){
+.cinco {
+    margin-top: 85px !important;
+}
+  .col-sm-6.dos {
+    padding-left: 0px;
+}
+.col-sm-6.uno {
+    padding-right: 15px !important;
+}
+}   
+@media (min-width: 480px){
+.cinco {
+    margin-top: 85px !important;
+}
+  .col-sm-6.dos {
+    padding-left: 0px;
+    margin-top: 10px !important;
+}
+.col-sm-6.uno {
+    padding-right: 0px;
+    margin-top: 10px !important;
+}
+.sh-component.kl-header-toptext.kl-font-alt {
+    display: none;
+}
+div.fsi-social-iconss-right{
+margin-top:-120px;
+}
+}    
+@media (min-width: 320px){
+.cinco {
+    margin-top: 85px !important;
+}
+  .col-sm-6.dos {
+    padding-left: 0px;
+    margin-top: 10px !important;
+}
+.col-sm-6.uno {
+    padding-right: 0px;
+    margin-top: 10px !important;
+}
+.sh-component.kl-header-toptext.kl-font-alt {
+    display: none;
+}
+div.fsi-social-iconss-right{
+margin-top:-120px;
+}
+
+}  
+@media (min-width: 280px){
+  .col-sm-6.dos {
+    padding-left: 0px;
+    margin-top: 10px !important;
+}
+.col-sm-6.uno {
+    padding-right: 0px;
+    margin-top: 10px !important;
+}
+.sh-component.kl-header-toptext.kl-font-alt {
+    display: none;
+}
+div.fsi-social-iconss-right{
+margin-top:-120px;
+}
+
+}
+
+.textwidget a.facebookk {
+    color: #fff !important;
+    padding: 16px 18px 17px 18px !important;
+    background-color: #4C66A4 !important;
+    float: left !important;
+    cursor: pointer !important;
+}
+.textwidget a.twitter {
+    color: #fff !important;
+    padding: 16px 13px 17px 13px !important;
+    background-color: #55ACEE !important;
+    float: left !important;
+    cursor: pointer !important;
+}
+.widget-footer {
+    z-index: 100000;
+    position: fixed;
+    float: left;
+    text-align: center;
+    margin-left: 88%;
+    font-size: 20px;
+    
+    
+    color: #fff;  
+    height: 71px;
+    width: 100%;    
+}
+
+div.fsi-social-iconss-right {
+    background: none repeat scroll 0 0 transparent;
+   /* height: 250px;*/
+    /* margin-top: -250px; */
+  /*  right: 0;
+    top: 60%;
+    width: 80px;*/
+}
+div.fsi-iconss {
+    /*position: fixed;
+    z-index: 1000;*/
+}
+.i8rightt {
+    background: none no-repeat scroll center 10px #44f;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    box-shadow: -4px 5px 4px -4px #454545;
+    display: block;
+    float: right;
+    height: 100px;
+    margin: 0 0 6px;
+    padding-top: 50px;
+    padding-right: 15px;
+    position: relative;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: none !important;
+    width: 100px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 15px;
+}
+.facebooki77 {
+    background-image: url(http://srv.com/propuestas/servivueltasdos/wp-content/plugins/wp-fixed-social-profile-icons/img/facebook-icon.png);
+    background-color: #df5922;
+}
+.i8rightt:hover,  .i8rightt:focus{
+				outline:0;
+				width:100px;
+    background-color: rgb(183, 69, 22);
+    color: #fff;
+				}
+.i8rightt:active {
+    outline:0;
+				width:100px;
+}
+.i8righttt {
+    background: none no-repeat scroll center 10px #44f;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    box-shadow: -4px 0 4px -4px #444;
+    display: block;
+    float: right;
+    height: 100px;
+    margin: 0 0 6px;
+    padding-top: 50px;
+    padding-right: 5px;
+    position: relative;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: none !important;
+    width: 100px;
+    font-size: 12px;
+    text-transform: uppercase;
+    
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.facebooki777 {
+    background-image: url(http://srvc.com/propuestas/servivueltasdos/wp-content/plugins/wp-fixed-social-profile-icons/img/edi-icon.png);
+    background-color: #454545;
+}
+.i8righttt:hover,  .i8righttt:focus{
+				outline:0;
+				width:100px;
+    background-color: #454545;
+    color: #fff;
+				}
+.i8righttt:active {
+    outline:0;
+				width:100px;
+}
+.fsi-icons.fsi-social-icons-right{
+    display:none;
+}
+::-webkit-scrollbar {display: none;}
+    ::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0.2); border-radius:10px;}
+    ::-webkit-scrollbar-track {background: transparent}
+.registro{
+    background: #fff !important;
+    border: 2px solid #969696 !important;
+    color: #323232 !important;
+    margin-top: -10px !important;
+}
+.registro:hover, .registro:active, .registro:focus{
+    background: #969696 !important;
+}
+.separacion{
+text-align: center;   
+margin-top: 10px;
+font-size: 12px;    
+}
+input[value="REGÍSTRATE"] {
+    color: #323232 !important;
+}
+input[value="REGÍSTRATE"]:hover   {
+    color: #323232 !important;
+}
+input[value="REGÍSTRATE"]:active   {
+    color: #323232 !important;
+}
+input[value="REGÍSTRATE"]:focus   {
+    color: #323232 !important;
+}
+
+@-moz-keyframes i8rightt {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes i8rightt {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes i8rightt {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+.i8rightt {
+  -moz-animation: i8rightt 1.5s infinite;
+  -webkit-animation: i8rightt 1.5s infinite;
+  animation: i8rightt 1.5s infinite;
+}
+
+#esconder {
+    /*position: fixed;
+    z-index: 1002;
+    right: 0;
+    top: 20%;*/
+    background-color: #fff;
+    color:#df5922;
+    border-top: 2px solid #df5922;
+    border-bottom: 2px solid #df5922;
+    border-left: 2px solid #df5922;
+    border-right: transparent;
+    margin-left: 100px;
+    padding-top: 3px;
+    padding-bottom: 3px
+}
+select#hora {
+    padding: 15px;
+    border-color: #ccc;
+    border-radius: 3px;
+    box-shadow: inset 1px 2px 0 rgba(0, 0, 0, 0.06);
+    color: #5b5b5b;
+    width:100%;
+}
+
+select#servicio {
+    padding: 15px;
+    border-color: #ccc;
+    border-radius: 3px;
+    box-shadow: inset 1px 2px 0 rgba(0, 0, 0, 0.06);
+    color: #5b5b5b;
+}
+
+select#ciudad {
+    padding: 15px;
+    border-color: #ccc;
+    border-radius: 3px;
+    box-shadow: inset 1px 2px 0 rgba(0, 0, 0, 0.06);
+    color: #5b5b5b;
+    width:100%;
+}
+
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required{
+  box-shadow: inset 1px 2px 0 rgba(0, 0, 0, 0.06);  
+}
+button#confirmar {
+    width: 100%;
+    padding-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #df5922;
+    border: transparent;
+    color: #fff;
+}
+#precio {
+  
+    background-color: #fff;
+    width: 100%;
+     border:1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: inset 1px 2px 0 rgba(0, 0, 0, 0.06);
+ 
+}
+
+.grande {
+    position: fixed;
+    right: 0;
+    z-index: 1002;
+    top: 70%;
+}
+.switch {
+	position: relative;
+	display: block;
+	vertical-align: top;
+	width: 70px;
+	height: 30px;
+	padding: 3px;
+	margin: 0 10px 10px 0;
+	background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
+	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
+	border-radius: 18px;
+	box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+}
+.switch-input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+.switch-label {
+	position: relative;
+	display: block;
+	height: inherit;
+	font-size: 10px;
+	text-transform: uppercase;
+	background: #eceeef;
+	border-radius: inherit;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+}
+.switch-label:before, .switch-label:after {
+	position: absolute;
+	top: 50%;
+	margin-top: -.5em;
+	line-height: 1;
+	-webkit-transition: inherit;
+	-moz-transition: inherit;
+	-o-transition: inherit;
+	transition: inherit;
+}
+.switch-label:before {
+	content: attr(data-off);
+	right: 11px;
+	color: #aaaaaa;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+.switch-label:after {
+	content: attr(data-on);
+	left: 11px;
+	color: #FFFFFF;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+	opacity: 0;
+}
+.switch-input:checked ~ .switch-label {
+	background: #df5922;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.switch-input:checked ~ .switch-label:before {
+	opacity: 0;
+}
+.switch-input:checked ~ .switch-label:after {
+	opacity: 1;
+}
+.switch-handle {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 28px;
+	height: 28px;
+	background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+	background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+	border-radius: 100%;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.switch-handle:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -6px;
+	width: 12px;
+	height: 12px;
+	background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
+	border-radius: 6px;
+	box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+}
+.switch-input:checked ~ .switch-handle {
+	left: 45px;
+	box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+ 
+/* Transition
+========================== */
+.switch-label, .switch-handle {
+	transition: All 0.3s ease;
+	-webkit-transition: All 0.3s ease;
+	-moz-transition: All 0.3s ease;
+	-o-transition: All 0.3s ease;
+}
+
+.descripcion{
+height:100px !important;
+    
+}
+textarea#des {
+    height: 80px;
+    line-height: 15px;
+    color: #5b5b5b;
+    padding-top: 15px;
+}
+
+.tp-leftarrow.tparrows.persephone.noSwipe{
+    top:35% !important;
+}
+.tp-rightarrow.tparrows.persephone.noSwipe{
+    top:35% !important;
+}
+a#totop{
+    display: none;
+}
+
+#cfc3 {
+    border-color: #000;
+}
+#cfc3 {
+    border-radius: 0px;
+}
+#cfc3 {
+    border: 0px solid;
+}
+#cfc3 {
+    margin: 10px;
+}
+#cfc3 {
+    padding: 0px;
+}
+#cfc3, #cfc3 p {
+    font-size: inherit;
+    font-size: 14px;
+}
+#cfc3, #cfc3 .wpcf73-quiz-label, #cfc3 p {
+    color: #000;
+}

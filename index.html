@@ -1,0 +1,2946 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="twitter:widgets:csp" content="on">
+<link rel="profile" href="http://gmpg.org/xfn/11"/>
+<link rel="pingback" href="https://servivueltas.net/xmlrpc.php"/>
+<link rel="stylesheet" type="text/css"  href="styles.css"> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+     
+    <script type="text/javascript">
+    
+    
+    
+    window.onload = function() {
+    var anchors = document.getElementsByClassName("recentwork_carousel recentwork_carousel_v3 eluidc229f7e2  recentwork3--light element-scheme--light");
+     var anchorsD = document.getElementsByClassName("zn_section eluid393190c6     section--no");
+    for (var i = 0; i < anchors.length; i++) {
+        anchors[i].onclick = function() {return(false);};
+    }
+    for (var i = 0; i < anchorsD.length; i++) {
+        anchorsD[i].onclick = function() {return(false);};
+    }
+};
+    </script>  
+    
+    <script>
+        document.getElementById('#fecha').value = new Date().toDateInputValue();
+	$(document).ready( function() {
+	    $('#fecha').val(new Date().toDateInputValue());
+	});​
+     </script>
+
+	
+    <script type="text/javascript">
+    $(document).ready(function() {
+         var cont=0;
+      $('#esconder').click(function() {
+           cont = cont+1;
+        $("#fadeIzq").animate({
+          right: parseInt($("#fadeIzq").css("right"))== 0 ?"-="+$("#fadeDer").outerWidth() : 0,},1000);
+        $("#fadeDer").animate({
+          right: parseInt($("#fadeDer").css("right"))== 0 ?"-="+$("#fadeDer").outerWidth() : 0,},1000);
+         if(cont % 2 == 0){
+             
+          document.getElementById('esconder').innerHTML = '\<img src="http://srv.com/propuestas/servivueltasdos/wp-content/themes/kallyas/images/right-black-arrow.png">';
+        }else if(!cont % 2 == 0){
+          document.getElementById('esconder').innerHTML = '\<img src="http://srv.com/propuestas/servivueltasdos/wp-content/themes/kallyas/images/arrow-left-direction.png">';
+
+        }
+      });
+
+    });
+  </script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdqRqBx9tggf7GuoA6mERiRzHautSZ9Fo&callback=initMap" type="text/javascript"></script> 
+      
+       <script type="text/javascript">
+            $(document).ready(function() {
+               <!--var cont=1; 
+              $('#check').click(function() {
+              cont = cont+1;
+                    if(cont % 2 == 0){
+             		var div = document.getElementById("precio");
+                        div.textContent = "$25.000";
+		     }else if(!cont % 2 == 0){
+		         var div = document.getElementById("precio");
+                        div.textContent = "$16.000";
+		     }
+              });  -->
+              
+              
+            });
+
+
+	class horita{}
+
+            function cambio(){
+            	var arregloHora = [];
+            	var obj = new horita();
+        	obj.min=8,
+    		obj.max=9,
+    		obj.etiqueta="08:00AM - 9:00AM",
+    		obj.valor="08:00AM - 9:00AM"
+            	arregloHora.push(obj);
+            	
+            	obj = new horita();
+            	obj.min=9,
+    		obj.max=10,
+    		obj.etiqueta="09:00AM - 10:00AM",
+    		obj.valor="09:00AM - 10:00AM"
+            	arregloHora.push(obj);
+            	
+            	obj = new horita();
+            	obj.min=10,
+    		obj.max=11,
+    		obj.etiqueta="10:00AM - 11:00AM",
+    		obj.valor="10:00AM - 11:00AM"
+            	arregloHora.push(obj);
+            	
+            	obj = new horita();
+            	obj.min=11,
+    		obj.max=12,
+    		obj.etiqueta="11:00AM - 12:00M",
+    		obj.valor="11:00AM - 12:00M"
+            	arregloHora.push(obj);
+            	
+            	obj = new horita();
+            	obj.min=12,
+    		obj.max=13,
+    		obj.etiqueta="12:00M - 1:00PM",
+    		obj.valor="12:00M - 1:00PM"
+            	arregloHora.push(obj);
+            	
+            	obj = new horita();
+            	obj.min=13,
+    		obj.max=14,
+    		obj.etiqueta="1:00PM - 2:00PM",
+    		obj.valor="13:00PM - 2:00PM"
+            	arregloHora.push(obj);
+            	
+            	obj = new horita();
+            	obj.min=14,
+    		obj.max=15,
+    		obj.etiqueta="2:00PM - 3:00PM",
+    		obj.valor="14:00PM - 3:00PM"
+            	arregloHora.push(obj);
+            	
+            	obj = new horita();
+            	obj.min=15,
+    		obj.max=16,
+    		obj.etiqueta="3:00PM - 4:00PM",
+    		obj.valor="15:00PM - 4:00PM"
+                arregloHora.push(obj);	
+                
+                obj = new horita();
+                obj.min=16,
+    		obj.max=17,
+    		obj.etiqueta="4:00PM - 5:00PM",
+    	        obj.valor="16:00PM - 5:00PM"
+                arregloHora.push(obj);	
+                
+                obj = new horita();
+                obj.min=17,
+	    	obj.max=18,
+	    	obj.etiqueta="5:00PM - 6:00PM",
+	    	obj.valor="17:00PM - 6:00PM"
+                arregloHora.push(obj);	
+                
+            	
+            
+    
+              	console.log("Hola");
+              	var fecha = new Date();
+              	var fecha1 = fecha.getFullYear()+"-"+(fecha.getMonth()+1)+"-"+fecha.getDate();
+              	console.log("hOY: "+fecha.getDay());
+              	
+              	
+              	var fechaSeleccionada = $('#fecha').val();
+              	console.log("llega"+fechaSeleccionada);
+              	
+              	var fech = new Date(fechaSeleccionada);
+              	
+              	console.log("Dia: "+fech.getDay());
+              	
+              	if (fecha1 == $('#fecha').val()){
+              	  console.log("SI"+arregloHora.length);
+              	  var cadena = '<option value="">* Seleccione Hora</option>';
+              	  for(var i=0;i<arregloHora.length;i++){
+              	  	//console.log(arregloHora[i]);
+              	  	if (fecha.getHours() <= arregloHora[i].min){
+              	  		if(fech.getDay() == 5){
+              	  			if(arregloHora[i].max <= 12){
+              	  				console.log(fecha.getHours() + " <= " + arregloHora[i].min);
+              	  				cadena += '<option value="'+arregloHora[i].valor+'">'+arregloHora[i].etiqueta+'</option>';
+              	  			}
+              	  		}else{
+              	  			console.log(fecha.getHours() + " <= " + arregloHora[i].min);
+              	  			cadena += '<option value="'+arregloHora[i].valor+'">'+arregloHora[i].etiqueta+'</option>';
+              	  		}
+              	  	}
+              	  }
+              	  console.log(cadena);
+              	 var aaaa = document.getElementById("hora");
+              	 aaaa.innerHTML = "";
+              	 aaaa.innerHTML = cadena;
+              	}else{
+                  console.log("NO");
+                  var cadena = '<option value="">Seleccione Hora</option>';
+              	  for(var i=0;i<arregloHora.length;i++){
+              	  	console.log("Dia futuro = ")
+              	  	if(fech.getDay() == 5){
+              	  			if(arregloHora[i].max <= 12){
+              	  				console.log(fecha.getHours() + " <= " + arregloHora[i].min);
+              	  				cadena += '<option value="'+arregloHora[i].valor+'">'+arregloHora[i].etiqueta+'</option>';
+              	  			}
+              	  		}else{
+              	  			console.log(fecha.getHours() + " <= " + arregloHora[i].min);
+              	  			cadena += '<option value="'+arregloHora[i].valor+'">'+arregloHora[i].etiqueta+'</option>';
+              	  		}
+              	  }
+              	  console.log(cadena);
+              	 var aaaa = document.getElementById("hora");
+              	 aaaa.innerHTML = "";
+              	 aaaa.innerHTML = cadena;
+              	}
+              	
+              	
+              	console.log("hora web "+$('#hora').val());
+              	
+              	console.log(fecha.getHours());
+              	
+              	
+              	
+              	
+              }
+          </script> 
+
+     <script type="text/javascript">
+          function validate(){
+
+              var dirRec   = $('#dirRec').val();
+              var dirEnv   = $('#dirEnv').val();
+              var queRec   = $('#queRec').val();
+              var queEnt   = $('#queEnt').val();
+              var nombre   = $('#nombre').val();
+              var email    = $('#email').val();
+              var telefono = $('#telefono').val();
+              var seleccion = $("#chec")[0].checked;
+ 
+               if (dirRec == "" || dirEnv == "" || queRec == "" || queEnt == "" || nombre == "" || email == "" || telefono == "") {
+
+                  return false;
+               }else {
+                  var div = document.getElementById("precio");
+                    div.textContent = "$16.000";
+                    var text = div.textContent;  
+                    return true;  
+   
+               }
+          }
+      </script>
+   
+    
+<meta name='robots' content='index, follow, max-video-preview:-1, max-snippet:-1, max-image-preview:large' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v18.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Mensajeria en Bogota, servicio de mensajeros por horas, radicacion de documentos, vueltas y diligencias en Colombia</title>
+	<meta name="description" content="Servivueltas Empresa especializada en mensajeria, distribución outsourcing y radicacion de documentos y pagos en Bogota D.C. Colombia" />
+	<link rel="canonical" href="https://servivueltas.net/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Mensajeria en Bogota, servicio de mensajeros por horas, radicacion de documentos, vueltas y diligencias en Colombia" />
+	<meta property="og:description" content="Servivueltas Empresa especializada en mensajeria, distribución outsourcing y radicacion de documentos y pagos en Bogota D.C. Colombia" />
+	<meta property="og:url" content="https://servivueltas.net/" />
+	<meta property="og:site_name" content="Servivueltas" />
+	<meta property="article:modified_time" content="2017-01-26T15:04:25+00:00" />
+	<meta name="twitter:card" content="summary" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://servivueltas.net/#website","url":"https://servivueltas.net/","name":"Servivueltas","description":"Servicio ágil y Confiable","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://servivueltas.net/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"WebPage","@id":"https://servivueltas.net/#webpage","url":"https://servivueltas.net/","name":"Mensajeria en Bogota, servicio de mensajeros por horas, radicacion de documentos, vueltas y diligencias en Colombia","isPartOf":{"@id":"https://servivueltas.net/#website"},"datePublished":"2015-10-30T14:25:48+00:00","dateModified":"2017-01-26T15:04:25+00:00","description":"Servivueltas Empresa especializada en mensajeria, distribución outsourcing y radicacion de documentos y pagos en Bogota D.C. Colombia","breadcrumb":{"@id":"https://servivueltas.net/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://servivueltas.net/"]}]},{"@type":"BreadcrumbList","@id":"https://servivueltas.net/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//maps.googleapis.com' />
+<link rel='dns-prefetch' href='//www.google.com' />
+<link rel='dns-prefetch' href='//code.tidio.co' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Servivueltas &raquo; Feed" href="https://servivueltas.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Servivueltas &raquo; Feed de los comentarios" href="https://servivueltas.net/comments/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/servivueltas.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.9.10"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='zn_all_g_fonts-css'  href='//fonts.googleapis.com/css?family=Montserrat%3Aregular%2C500%2C700%7COpen+Sans%3Aregular%2C300%2C600%2C700%2C800&#038;ver=5.9.10' type='text/css' media='all' />
+<link rel='stylesheet' id='kallyas-styles-css'  href='https://servivueltas.net/wp-content/themes/kallyas/style.css?ver=4.0.11' type='text/css' media='all' />
+<link rel='stylesheet' id='th-bootstrap-styles-css'  href='https://servivueltas.net/wp-content/themes/kallyas/css/bootstrap.min.css?ver=4.0.11' type='text/css' media='all' />
+<link rel='stylesheet' id='th-theme-template-styles-css'  href='https://servivueltas.net/wp-content/themes/kallyas/css/template.css?ver=4.0.11' type='text/css' media='all' />
+<link rel='stylesheet' id='zn_pb_css-css'  href='https://servivueltas.net/wp-content/uploads/zn_pb_css.css?ver=5.9.10' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://servivueltas.net/wp-includes/css/dist/block-library/style.min.css?ver=5.9.10' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='cfc_style-css'  href='http://servivueltas.net/wp-content/plugins/cf7-customizer/assets/css/style.min.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://servivueltas.net/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wpp-popup-styles-css'  href='https://servivueltas.net/wp-content/plugins/m-wp-popup/css/popup-styles.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='popup-css'  href='http://servivueltas.net/wp-content/plugins/popup/popup.css?ver=5.9.10' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='https://servivueltas.net/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.0.6' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}
+</style>
+<link rel='stylesheet' id='fsistyle-css'  href='https://servivueltas.net/wp-content/plugins/wp-fixed-social-profile-icons/fsi.css?ver=5.9.10' type='text/css' media='all' />
+<link rel='stylesheet' id='spu-public-css-css'  href='https://servivueltas.net/wp-content/plugins/popups/public/assets/css/public.css?ver=1.9.3.8' type='text/css' media='all' />
+<link rel='stylesheet' id='afn-font-awesome-css'  href='https://servivueltas.net/wp-content/themes/kallyas/css/font-awesome.min.css?ver=4.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='tf-compiled-options-cfc-css'  href='http://servivueltas.net/wp-content/uploads/titan-framework-cfc-css.css?ver=5.9.10' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='https://servivueltas.net/wp-content/plugins/easy-fancybox/css/jquery.fancybox.min.css?ver=1.3.24' type='text/css' media='screen' />
+<link rel='stylesheet' id='zn_static_content-css'  href='https://servivueltas.net/wp-content/themes/kallyas/css/sliders/static_content_styles.css?ver=4.0.11' type='text/css' media='all' />
+<link rel='stylesheet' id='th-theme-print-stylesheet-css'  href='https://servivueltas.net/wp-content/themes/kallyas/css/print.css?ver=4.0.11' type='text/css' media='print' />
+<link rel='stylesheet' id='th-theme-options-styles-css'  href='http://servivueltas.net/wp-content/uploads/zn_dynamic.css?ver=4.0.11' type='text/css' media='all' />
+<link rel='stylesheet' id='bfa-font-awesome-css'  href='https://use.fontawesome.com/releases/v5.15.4/css/all.css?ver=2.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='bfa-font-awesome-v4-shim-css'  href='https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css?ver=2.0.1' type='text/css' media='all' />
+<style id='bfa-font-awesome-v4-shim-inline-css' type='text/css'>
+
+			@font-face {
+				font-family: 'FontAwesome';
+				src: url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.eot'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.eot?#iefix') format('embedded-opentype'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.woff2') format('woff2'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.woff') format('woff'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.ttf') format('truetype'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.svg#fontawesome') format('svg');
+			}
+
+			@font-face {
+				font-family: 'FontAwesome';
+				src: url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.eot'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.eot?#iefix') format('embedded-opentype'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.woff2') format('woff2'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.woff') format('woff'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.ttf') format('truetype'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.svg#fontawesome') format('svg');
+			}
+
+			@font-face {
+				font-family: 'FontAwesome';
+				src: url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.eot'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.eot?#iefix') format('embedded-opentype'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.woff2') format('woff2'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.woff') format('woff'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.ttf') format('truetype'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.svg#fontawesome') format('svg');
+				unicode-range: U+F004-F005,U+F007,U+F017,U+F022,U+F024,U+F02E,U+F03E,U+F044,U+F057-F059,U+F06E,U+F070,U+F075,U+F07B-F07C,U+F080,U+F086,U+F089,U+F094,U+F09D,U+F0A0,U+F0A4-F0A7,U+F0C5,U+F0C7-F0C8,U+F0E0,U+F0EB,U+F0F3,U+F0F8,U+F0FE,U+F111,U+F118-F11A,U+F11C,U+F133,U+F144,U+F146,U+F14A,U+F14D-F14E,U+F150-F152,U+F15B-F15C,U+F164-F165,U+F185-F186,U+F191-F192,U+F1AD,U+F1C1-F1C9,U+F1CD,U+F1D8,U+F1E3,U+F1EA,U+F1F6,U+F1F9,U+F20A,U+F247-F249,U+F24D,U+F254-F25B,U+F25D,U+F267,U+F271-F274,U+F279,U+F28B,U+F28D,U+F2B5-F2B6,U+F2B9,U+F2BB,U+F2BD,U+F2C1-F2C2,U+F2D0,U+F2D2,U+F2DC,U+F2ED,U+F328,U+F358-F35B,U+F3A5,U+F3D1,U+F410,U+F4AD;
+			}
+		
+</style>
+<script type='text/javascript' src='https://servivueltas.net/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://servivueltas.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='http://servivueltas.net/wp-content/plugins/cf7-customizer/assets/js/custom.min.js?ver=5.9.10' id='cfc_customJs-js'></script>
+<script type='text/javascript' id='wpp-frontend-js-extra'>
+/* <![CDATA[ */
+var wpp = {"exit_alert_text":"I need you to see something - stay on this page"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://servivueltas.net/wp-content/plugins/m-wp-popup/js/wpp-popup-frontend.js?ver=1.0' id='wpp-frontend-js'></script>
+<script type='text/javascript' src='http://servivueltas.net/wp-content/plugins/popup/popup.js?ver=5.9.10' id='popup-js'></script>
+<script type='text/javascript' src='https://servivueltas.net/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.0.6' id='tp-tools-js'></script>
+<script type='text/javascript' src='https://servivueltas.net/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.0.6' id='revmin-js'></script>
+<script type='text/javascript' src='https://servivueltas.net/wp-content/themes/kallyas/js/bootstrap.min.js?ver=4.0.11' id='th-bootstrap-plugin-js'></script>
+<script type='text/javascript' src='https://servivueltas.net/wp-content/themes/kallyas/js/modernizr.js?ver=4.0.11' id='modernizr-js'></script>
+<link rel="https://api.w.org/" href="https://servivueltas.net/wp-json/" /><link rel="alternate" type="application/json" href="https://servivueltas.net/wp-json/wp/v2/pages/1607" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://servivueltas.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://servivueltas.net/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.9.10" />
+<link rel='shortlink' href='https://servivueltas.net/' />
+<link rel="alternate" type="application/json+oembed" href="https://servivueltas.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fservivueltas.net%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://servivueltas.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fservivueltas.net%2F&#038;format=xml" />
+<script type="text/javascript">
+var pma_template_Url = 'https://servivueltas.net';var pma_plugin_Url = 'https://servivueltas.net/wp-content/plugins';</script>		<style>
+		div.fsi-social-icons-right,div.fsi-social-icons-left{
+	margin-top:-250px}
+		</style>
+				<style>
+				div.fsi-icons{
+				_position:absolute;
+				}
+				div.fsi-social-icons{
+				_bottom:auto;_top:
+				expression(ie6=(document.documentElement.scrollTop+document.documentElement.clientHeight - 52+"px") );
+				}
+		</style>
+
+		<style>
+				.i8right:hover, .i8right:active, .i8right:focus{
+				outline:0;
+				width:60px;
+				}
+
+				.i8left:hover, .i8left:active, .i8left:focus{
+				outline:0;
+				width:60px;
+				}
+				</style>
+
+
+	<link rel="shortcut icon" href="https://servivueltas.net/wp-content/themes/kallyas/favicon.ico"/>
+        <!--[if lte IE 8]>
+        <script type="text/javascript">
+            var $buoop = {
+                vs: { i: 10, f: 25, o: 12.1, s: 7, n: 9 }
+            };
+
+            $buoop.ol = window.onload;
+
+            window.onload = function(){
+                try {
+                    if ($buoop.ol) {
+                        $buoop.ol()
+                    }
+                }
+                catch (e) {}
+
+                var e = document.createElement("script");
+                e.setAttribute("type", "text/javascript");
+                e.setAttribute("src", "https://browser-update.org/update.js");
+                document.body.appendChild(e);
+            };
+        </script>
+        <![endif]-->
+
+        <!-- for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="preconnect" href="//code.tidio.co"><meta name="generator" content="Powered by Slider Revolution 5.0.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<!-- Generated inline styles --><style type='text/css' id='zn-inline-styles'>/* Add negative top margin to Action Box */
+.eluid87b4746b {margin-top:-25px;}.zn_section.eluidb5f03bfa{padding-top:0px;padding-bottom:0px;}.zn_section.eluid35b44958{padding-top:0px;background-color:#ffffff;}.zn_section.eluidda4e6de8{padding-top:50px;padding-bottom:24px;background-color:#ffffff;}.eluid89f95c9e{padding-top:1%;}.eluidd8a95869{padding-bottom:0px;}.eluidd8a95869 .tbk__title{font-family:Montserrat;font-size:38px;line-height:46px;font-weight:700;color:#454545;}.eluidd8a95869 .tbk__subtitle{font-size:18px;line-height:32px;font-weight:300;}.eluidd8a95869 .tbk__icon { font-size:28px; }.eluid6d1f74ab {
+				margin-top : 30px;
+				margin-bottom:22px;
+                border-top-width:4px;
+                border-top-color:#ededed;
+		}.eluida8def4c9{padding-top:1%;padding-left:8%;}@media screen and (min-width: 768px) and (max-width:991px){.eluida8def4c9{padding-left:0px;}}@media screen and (max-width: 767px){.eluida8def4c9{padding-left:0px;}}.eluid357dff81:not(.style3) .wpk-circle-span:after, .eluid357dff81.circle-text-box.style2 .wpk-circle-span::before, .eluid357dff81.circle-text-box.style3 .wpk-circle-span {background-color:#df5922} .zn_section.eluida57bf773{padding-top:0px;padding-bottom:0px;}.eluidee1cbb9c{ background-color:rgba(61,61,61,0.7) !important; padding-top:15%;padding-right:10%;padding-bottom:13%;padding-left:15%;}@media screen and (min-width: 992px) and (max-width: 1199px){.eluidee1cbb9c{padding-right:6%;padding-left:5%;}}@media screen and (min-width: 768px) and (max-width:991px){.eluidee1cbb9c{padding-right:6%;padding-left:5%;}}@media screen and (max-width: 767px){.eluidee1cbb9c{padding-right:5%;padding-left:5%;}}.eluid2ed10931 .kl-iconbox__title {font-family:Montserrat;font-size:25px;line-height:25px;font-weight:700;color:#ffffff;font-style:normal;} .eluid2ed10931 .kl-iconbox__desc {font-family:Open Sans;font-size:16px;line-height:24px;font-weight:400;color:#ffffff;font-style:normal;} .eluid2ed10931 img.kl-iconbox__icon { max-width: 200px }.eluid0f284402{ background-color:rgba(223,89,34,0.7) !important; padding-top:15%;padding-right:15%;padding-bottom:13%;padding-left:10%;}@media screen and (min-width: 992px) and (max-width: 1199px){.eluid0f284402{padding-top:10PX;padding-right:6%;padding-left:5%;}}@media screen and (min-width: 768px) and (max-width:991px){.eluid0f284402{padding-right:6%;padding-left:5%;}}@media screen and (max-width: 767px){.eluid0f284402{padding-right:5%;padding-left:5%;}}.eluidbfd8fa06 .kl-iconbox__title {font-family:Montserrat;font-size:25px;line-height:25px;font-weight:700;color:#ffffff;font-style:normal;} .eluidbfd8fa06 .kl-iconbox__desc {font-family:Open Sans;font-size:16px;line-height:24px;font-weight:400;color:#ffffff;font-style:normal;} .eluidbfd8fa06 img.kl-iconbox__icon { max-width: 200px }.zn_section.eluide10be98d{background-color:#ffffff;}.eluidb6a72b6f{padding-top:35px;}.eluidb6a72b6f .tbk__title{font-family:Montserrat;font-size:38px;line-height:38px;font-weight:700;color:#7f7f7f;}.eluidb6a72b6f .tbk__subtitle{font-size:18px;color:#cccccc;}.eluidb6a72b6f .tbk__icon { font-size:30px; }.eluidf92e1447 .services_box__fonticon { font-size: 50px }.eluiddecbe593 .services_box__fonticon { font-size: 50px }.eluiddd6acef7 .services_box__fonticon { font-size: 50px }.eluid59cf744c .services_box__fonticon { font-size: 50px }.zn_section.eluid1fbd0c75{padding-top:40px;padding-bottom:20px;}.eluidd1409578{padding-bottom:0px;}.eluidd1409578 .tbk__title{font-family:Montserrat;font-size:36px;line-height:46px;font-weight:700;color:#454545;}.eluidd1409578 .tbk__subtitle{font-size:18px;line-height:32px;font-weight:300;}.eluidd1409578 .tbk__icon { font-size:28px; }.eluidd1409578.tbk--colored .tbk__symbol span {background-color:#df5922;}.zn_section.eluid393190c6{padding-top:40px;padding-bottom:13px;}.zn_section.eluid904f057a{padding-top:20px;padding-bottom:20px;}.eluidf88be740{padding-bottom:0px;}.eluidf88be740 .tbk__title{font-family:Montserrat;font-size:36px;line-height:46px;font-weight:700;color:#454545;}.eluidf88be740 .tbk__subtitle{font-size:18px;line-height:32px;font-weight:300;}.eluidf88be740 .tbk__icon { font-size:28px; }.eluidf88be740.tbk--colored .tbk__symbol span {background-color:#df5922;}
+.eluidb5c7ec57:not(.static-content--fullscreen) { height:520px;}
+@media only screen and (max-height : 520px){ .eluidb5c7ec57:not(.static-content--fullscreen) {height:90vh;} }.zn_section.eluidccca59aa{padding-top:29px;padding-bottom:25px;background-color:#ffffff;}.eluid748eb9eb span.statistic-box__icon {font-size: 80px }.eluid748eb9eb .statistic-box__line{border-bottom-color: #d6d6d6 }.zn_section.eluidccd83f8b{padding-top:65px;padding-bottom:86px;background-color:#232323;}.eluid0b0aae6a{padding-top:67px;padding-bottom:28px;}.eluid0b0aae6a .tbk__title{font-family:Montserrat;font-size:38px;line-height:38px;font-weight:700;color:#ffffff;}.eluid0b0aae6a .tbk__subtitle{font-size:18px;color:#cccccc;}.eluid0b0aae6a .tbk__icon { font-size:30px; }.zn_section.eluid3ec5b68b{background-color:#f4f4f4;}@media screen and (min-width:600px) {body:not(.zn_pb_editor_enabled) .zn_section--inlinemodal.eluid3ec5b68b {width:600px}}.eluid1a932416{padding-bottom:15px;}.eluid1a932416 .tbk__title{font-weight:700;color:#3f3f3f;}.eluid1a932416 .tbk__subtitle{font-size:16px;line-height:22px;font-weight:300;}.eluid1a932416 .tbk__icon { font-size:28px; }.zn_section.eluida667c8b7{background-color:#f4f4f4;}@media screen and (min-width:600px) {body:not(.zn_pb_editor_enabled) .zn_section--inlinemodal.eluida667c8b7 {width:600px}}.eluidf4070dae{padding-bottom:15px;}.eluidf4070dae .tbk__title{font-weight:700;color:#3f3f3f;}.eluidf4070dae .tbk__subtitle{font-size:16px;line-height:22px;font-weight:300;}.eluidf4070dae .tbk__icon { font-size:28px; }.zn_section.eluid56fa9bb1{background-color:#f4f4f4;}@media screen and (min-width:620px) {body:not(.zn_pb_editor_enabled) .zn_section--inlinemodal.eluid56fa9bb1 {width:620px}}.eluid78cc0785{padding-bottom:15px;}.eluid78cc0785 .tbk__title{font-weight:700;color:#3f3f3f;}.eluid78cc0785 .tbk__subtitle{font-size:16px;line-height:22px;font-weight:300;}.eluid78cc0785 .tbk__icon { font-size:28px; }.zn_section.eluid5a4359e4{background-color:#f4f4f4;}@media screen and (min-width:600px) {body:not(.zn_pb_editor_enabled) .zn_section--inlinemodal.eluid5a4359e4 {width:600px}}.eluidc0b6c3c0{padding-bottom:15px;}.eluidc0b6c3c0 .tbk__title{font-weight:700;color:#3f3f3f;}.eluidc0b6c3c0 .tbk__subtitle{font-size:16px;line-height:22px;font-weight:300;}.eluidc0b6c3c0 .tbk__icon { font-size:28px; }.zn_section.eluid6af4513b{background-color:#ededed;}@media screen and (min-width:420px) {body:not(.zn_pb_editor_enabled) .zn_section--inlinemodal.eluid6af4513b {width:420px}}.eluidea9a85d8 .grid-ibx__title {font-family:Open Sans;font-size:20px;line-height:30px;font-weight:400;font-style:normal;} .eluidea9a85d8 .grid-ibx__desc {font-family:Open Sans;font-size:13px;line-height:24px;font-weight:400;font-style:normal;} .eluidea9a85d8 .grid-ibx__icon {color:#df5922} .eluidea9a85d8 .grid-ibx__item {background-color: #ededed;} .zn_section.eluid3b7fd00e{background-color:#ededed;}@media screen and (min-width:420px) {body:not(.zn_pb_editor_enabled) .zn_section--inlinemodal.eluid3b7fd00e {width:420px}}.eluid10c63de9 .grid-ibx__title {font-family:Open Sans;font-size:20px;line-height:30px;font-weight:400;font-style:normal;} .eluid10c63de9 .grid-ibx__desc {font-family:Open Sans;font-size:13px;line-height:24px;font-weight:400;font-style:normal;} .eluid10c63de9 .grid-ibx__icon {color:#df5922} .eluid10c63de9 .grid-ibx__item {background-color: #EDEDED;} .zn_section.eluidf35bdea2{background-color:#ededed;}@media screen and (min-width:420px) {body:not(.zn_pb_editor_enabled) .zn_section--inlinemodal.eluidf35bdea2 {width:420px}}.eluidc78d0a4d .grid-ibx__title {font-family:Open Sans;font-size:20px;line-height:30px;font-weight:400;font-style:normal;} .eluidc78d0a4d .grid-ibx__desc {font-family:Open Sans;font-size:13px;line-height:24px;font-weight:400;font-style:normal;} .eluidc78d0a4d .grid-ibx__icon {color:#df5922} .eluidc78d0a4d .grid-ibx__item {background-color: #EDEDED;} .zn_section.eluid0a18e2d7{background-color:#ededed;}@media screen and (min-width:420px) {body:not(.zn_pb_editor_enabled) .zn_section--inlinemodal.eluid0a18e2d7 {width:420px}}.eluid5626b9c5 .grid-ibx__title {font-family:Open Sans;font-size:20px;line-height:30px;font-weight:400;font-style:normal;} .eluid5626b9c5 .grid-ibx__desc {font-family:Open Sans;font-size:13px;line-height:24px;font-weight:400;font-style:normal;} .eluid5626b9c5 .grid-ibx__icon {color:#df5922} .eluid5626b9c5 .grid-ibx__item {background-color: #EDEDED;} .zn_section.eluid592634d9{background-color:#ededed;}@media screen and (min-width:420px) {body:not(.zn_pb_editor_enabled) .zn_section--inlinemodal.eluid592634d9 {width:420px}}.eluid444d6ad1 .grid-ibx__title {font-family:Open Sans;font-size:20px;line-height:30px;font-weight:400;font-style:normal;} .eluid444d6ad1 .grid-ibx__desc {font-family:Open Sans;font-size:13px;line-height:24px;font-weight:400;font-style:normal;} .eluid444d6ad1 .grid-ibx__icon {color:#df5922} .eluid444d6ad1 .grid-ibx__item {background-color: #EDEDED;} .zn_section.eluid7f5320f6{background-color:#ededed;}@media screen and (min-width:800px) {body:not(.zn_pb_editor_enabled) .zn_section--inlinemodal.eluid7f5320f6 {width:800px}}.eluid5fa9a077 .grid-ibx__title {font-family:Open Sans;font-size:20px;line-height:30px;font-weight:400;font-style:normal;} .eluid5fa9a077 .grid-ibx__desc {font-family:Open Sans;font-size:13px;line-height:24px;font-weight:400;font-style:normal;} .eluid5fa9a077 .grid-ibx__icon {color:#df5922} .eluid5fa9a077 .grid-ibx__item {background-color: #EDEDED;} .zn_section.eluid11ec32b7{background-color:#ededed;}@media screen and (min-width:600px) {body:not(.zn_pb_editor_enabled) .zn_section--inlinemodal.eluid11ec32b7 {width:600px}}.eluid94d1f9b6 .grid-ibx__title {font-family:Open Sans;font-size:20px;line-height:30px;font-weight:400;font-style:normal;} .eluid94d1f9b6 .grid-ibx__desc {font-family:Open Sans;font-size:13px;line-height:24px;font-weight:400;font-style:normal;} .eluid94d1f9b6 .grid-ibx__icon {color:#df5922} .eluid94d1f9b6 .grid-ibx__item {background-color: #EDEDED;} .zn_section.eluid49fd4110{background-color:#ededed;}@media screen and (min-width:420px) {body:not(.zn_pb_editor_enabled) .zn_section--inlinemodal.eluid49fd4110 {width:420px}}.zn_section.eluid4a352633{background-color:#ededed;}@media screen and (min-width:600px) {body:not(.zn_pb_editor_enabled) .zn_section--inlinemodal.eluid4a352633 {width:600px}}</style><link rel="icon" href="https://servivueltas.net/wp-content/uploads/2016/11/cropped-favi-2-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://servivueltas.net/wp-content/uploads/2016/11/cropped-favi-2-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://servivueltas.net/wp-content/uploads/2016/11/cropped-favi-2-180x180.png" />
+<meta name="msapplication-TileImage" content="https://servivueltas.net/wp-content/uploads/2016/11/cropped-favi-2-270x270.png" />
+    <style type="text/css" id="wpk_local_adminbar_notice_styles">
+        #wpadminbar .ab-top-menu .wpk-kallyas-options-menu-item:hover div,
+        #wpadminbar .ab-top-menu .wpk-kallyas-options-menu-item:active div,
+        #wpadminbar .ab-top-menu .wpk-kallyas-options-menu-item:focus div,
+        #wpadminbar .ab-top-menu .wpk-kallyas-options-menu-item div {
+            color: #eee;
+            cursor: default;
+            background: #222;
+            position: relative;
+        }
+        #wpadminbar .ab-top-menu .wpk-kallyas-options-menu-item:hover div {
+            color: #45bbe6 !important;
+        }
+        #wpadminbar .ab-top-menu .wpk-kallyas-options-menu-item > .ab-item:before {
+            content: '\f111';
+            top: 2px;
+        }
+    </style>
+</head>
+<body  class="home page-template-default page page-id-1607 res1170 kl-sticky-header kl-skin--light">
+
+
+<div class="login_register_stuff">        <!-- Login/Register Modal forms - hidden by default to be opened through modal -->
+            <div id="login_panel" class="loginbox-popup auth-popup mfp-hide">
+                <div class="inner-container login-panel auth-popup-panel">
+                   <h3 class="m_title_ext auth-popup-title" itemprop="alternativeHeadline">INICIAR SESIÓN</h3>
+			<form name="FORMULARIO" id="FORMULARIO" method="POST" action="http://www.servivueltas.net/Mensajeria/EClave.php">
+			<div class="form-group kl-fancy-form">    
+			<input type="text" id="kl-username" name="Usuario" required="true" class="form-control inputbox kl-fancy-form-input kl-fw-input  " placeholder="escriba su usuario"/>
+			<label class="kl-font-alt kl-fancy-form-label">USUARIO</label>
+			</div>
+			<div class="form-group kl-fancy-form">
+			<input type="password" id="kl-password" name="Contrasena" required="true" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="escriba su contraseña"/>
+			<label class="kl-font-alt kl-fancy-form-label">CONTRASEÑA</label>
+			</div>
+			<input type="submit" value="Ingresar" class="btn zn_sub_button btn-fullcolor btn-md">
+			</form>
+			<br>
+			<a href="/Mensajeria/Noguia.php" class="consulta" style="margin-left:26%; font-size:16px;" target="_blank"><i class="fa fa-search" aria-hidden="true" style="margin-right:10px;"></i>Consultar Guía</a>
+                </div>
+            </div>
+        <!-- end login panel -->
+                <div id="forgot_panel" class="loginbox-popup auth-dos forgot-popup mfp-hide">
+            <div class="inner-container forgot-panel auth-popup-panel">
+                <div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluid78cc0785 ">
+	<h3 class="tbk__title ">SOLICITA YA</h3>
+	<h4 class="tbk__subtitle">El aliado que necesitas para tus requerimientos de mensajería.</h4>
+</div>
+<div class="zn_custom_html eluidb1f5131d">
+		<div class="solicita">
+			<div class="screen-reader-response"></div>
+			<form name="FORMULARIO" id="FORMULARIO" method="POST" action="http://www.servivueltas.net/Mensajeria/Llega.php" class="alto">
+			    <div style="display: none;">
+					<input type="hidden" name="_wpcf7" value="1845">
+					<input type="hidden" name="_wpcf7_version" value="4.5.1">
+					<input type="hidden" name="_wpcf7_locale" value="es_ES">
+					<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1845-p1607-o2">
+					<input type="hidden" name="_wpnonce" value="53b5e121c6">
+				</div>
+				<div class="col-xs-12 col-sm-12">
+					<span class="wpcf7-form-control-wrap ciudad">
+						<select name="Ciudad_Recogida" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required ciudad" id="ciudad" required="true" aria-invalid="false">
+							<option value="Bogotá">Bogotá</option>
+							<option value="Cali">Cali</option>
+							<option value="Medellín">Medellín</option>
+						</select>
+					</span> 
+					<p></p>
+				</div>
+				<div class="col-sm-6 dos"></div>
+				<div class="col-xs-12 col-sm-12">
+					<label style="padding-top:5px; padding-bottom:5px; letter-spacing: 0.5px;"><i class="fa fa-clock-o" aria-hidden="true" style="margin-right:5px;"></i>Programar Servicio.  Lun-Vie: 8:00am  -  5:00pm  Sab: 8:00am  -  12:00m  </label>
+					<p></p>
+				</div>
+				<div class="col-sm-6 uno">
+					<span class="wpcf7-form-control-wrap date-460">
+						<input type="date" name="Fecha_Servicio" value="" style="padding-top: 25px; padding-bottom: 25px;" required="true" class="form-control inputbox kl-fancy-form-input kl-fw-input" aria-invalid="false" id="fecha" min=2025-07-04 onchange="cambio();" />
+					</span>
+					<p></p>
+					<span class="wpcf7-form-control-wrap dire-rec">
+						<input type="text" name="Direccion_Recogida" value="" style="padding-top: 25px;
+    padding-bottom: 25px;" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="dirRec" required="true" aria-invalid="false" placeholder="Dirección de inicio">
+					</span>
+				</div>
+				<div class="col-sm-6 dos">
+					<span class="wpcf7-form-control-wrap hora" >
+						<select name="Horax" placeholder="8:00AM - 9:00AM" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required hora" id="hora" aria-invalid="false" required="true">
+							<option value="">Seleccione Hora</option>
+							<option value="08:00AM - 9:00AM">8:00AM - 9:00AM</option>
+							<option value="09:00AM - 10:00AM">9:00AM - 10:00AM</option>
+							<option value="10:00AM - 11:00AM">10:00AM - 11:00AM</option>
+							<option value="11:00AM - 12:00M">11:00AM - 12:00M</option>
+							<option value="12:00M - 1:00PM">12:00M - 1:00PM</option>
+							<option value="13:00PM - 2:00PM">1:00PM - 2:00PM</option>
+							<option value="14:00PM - 3:00PM">2:00PM - 3:00PM</option>
+							<option value="15:00PM - 4:00PM">3:00PM - 4:00PM</option>
+							<option value="16:00PM - 5:00PM">4:00PM - 5:00PM</option>
+							<option value="17:00PM - 6:00PM">5:00PM - 6:00PM</option>
+						</select>
+					</span>
+					<p></p> 
+					<p>
+						<span class="wpcf7-form-control-wrap dire-envio">
+							<input type="text" name="Direccion_Entrega" value="" style="padding-top: 25px; padding-bottom: 25px;" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="dirEnv" required="true" aria-invalid="false" placeholder="Dirección final">
+						</span>
+					</p>
+					<div class="check">
+						<span class="wpcf7-form-control-wrap ida-vuelta">
+							<span class="wpcf7-form-control wpcf7-checkbox check">
+								<span class="wpcf7-list-item first last">
+									<label>
+										<input id="check" type="checkbox" name="IdayVue" value="2">&nbsp;
+										<span class="wpcf7-list-item-label">ida y vuelta</span>
+									</label>
+								</span>
+							</span>
+						</span>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12">
+					<span class="wpcf7-form-control-wrap descripcion">
+						<textarea name="Descripcion" cols="40" rows="10" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="des" aria-invalid="false" required="false" placeholder="Descripción del servicio"></textarea>
+					</span>
+						<p></p>
+					<p></p>
+				</div>
+				<div class="col-sm-6 uno cinco">
+					<span class="wpcf7-form-control-wrap desti">	
+						<input type="text"  name="Nombre_Destinatario" value="" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="desti" required="true" aria-invalid="false" placeholder="Destinatario" style="padding-top: 25px;
+    padding-bottom: 25px;">
+					</span>
+				</div>
+				<div class="col-sm-6 dos">
+					<span class="wpcf7-form-control-wrap monto">
+						<input type="number" style="padding-top: 25px;
+    padding-bottom: 25px;"  name="Recibido" value="" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="monto" aria-invalid="false" placeholder="Monto a transportar">
+					</span>
+				</div>
+				<div class="col-xs-12 col-sm-12">
+				    	<p></p>
+					<label style="padding-top:5px; padding-bottom:5px;"><i class="fa fa-user" aria-hidden="true" style="margin-right:5px;"></i>Datos Personales 
+					</label>
+					<p></p>
+				</div>
+				<div class="col-sm-6 uno">
+					<span class="wpcf7-form-control-wrap your-name">
+						<input type="text" style="padding-top: 25px;
+    padding-bottom: 25px;"  name="Nombre_Solicitante"  value="" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="nombre" required="true" aria-invalid="false" placeholder="Ingresa tu nombre">
+					</span>
+					<p></p>
+					<span class="wpcf7-form-control-wrap tel-532">
+						<input type="text"  style="padding-top: 25px;
+    padding-bottom: 25px;"  name="Telefono_Solicitante" value="" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="telefono" required="true" aria-invalid="false" placeholder="Ingresa tu teléfono">
+					</span>
+				</div>
+				<div class="col-sm-6 dos">
+					<span class="wpcf7-form-control-wrap monto">
+						<input type="text" style="padding-top: 25px; padding-bottom: 25px;"   value="" class="form-control inputbox kl-fancy-form-input kl-fw-input" required="true" name="cc_nit"  id="cc_nit" aria-invalid="false" placeholder="Nit/cc">
+					</span>
+					<p></p>
+					<span class="wpcf7-form-control-wrap your-email">
+						<input type="email" style="padding-top: 25px;
+    padding-bottom: 25px;"   name="Email" value="" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="email" required="true" aria-invalid="false" placeholder="Ingresa tu e-Mail">
+					</span>
+					
+				</div>
+				
+				<div class="col-sm-6 uno">
+					<span class="wpcf7-form-control-wrap tel-532">
+						<input type="number" style="padding-top: 25px;
+    padding-bottom: 25px;"  name="Celular_Solicitante" value="" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="telefono" required="true" aria-invalid="false" placeholder="Ingresa tu celular">
+					</span>
+						
+					<p></p>
+				</div>
+				<div class="col-xs-12 col-sm-12"></div>
+				<div class="col-sm-6 uno">
+					<label style="padding-top:15px; padding-bottom:15px; margin-left:15px; text-transform:uppercase;">Valor total del servicio</label>
+				</div>
+				<div class="col-sm-6 dos">
+					<label id="precio"  style="padding: 14px;">$16.000</label>
+						
+					<p></p>
+				</div>
+				<p><br></p>
+				<div class="col-xs-12 col-sm-12">
+					<input type="checkbox" checkbox-77="" name="Acepto" class:condiciones="" id="chec" checked="">
+						<a href="http://srv.com/propuestas/servivueltasdos/terminos.html" target="_blank">Acepto los términos y condiciones</a>
+				</div>
+				<div class="col-xs-12 col-sm-12">
+				<p>
+				    <input type="submit" class="btn zn_sub_button btn-fullcolor btn-md" id="confirmar" value="CONFIRMAR SOLICITUD"/>
+				</p>
+				</div>
+				<div class="wpcf7-response-output wpcf7-display-none"></div>
+					
+			</form>
+		</div>
+	</div>
+            </div>
+        </div><!-- end forgot pwd. panel -->
+        </div><!-- end login register stuff -->            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="grande">   
+<div class="fsi-iconss fsi-social-iconss-right"><div>			<div class="textwidget"><a href="#forgot_panel" data-lightbox="inline" class="facebooki77 i8rightt eModal-1" id="fadeIzq">Solicita <br> Ya</a></div>
+		</div><div>			<div class="textwidget"><a href="#eluid3ec5b68b" data-lightbox="inline" class="facebooki777 i8righttt " id="fadeDer">Corporativo</a></div>
+		</div></div>
+<button id="esconder" class="esc"><img src="http://srv.com/propuestas/servivueltasdos/wp-content/themes/kallyas/images/right-black-arrow.png"</button>    
+</div>      
+<div id="page_wrapper">
+
+<header id="header" class="site-header style7 cta_button header--sticky js-scroll-event   sticky-resize headerstyle--default sh--light site-header--absolute nav-th--light"  data-forch="1" data-visibleclass="header--is-sticked"  data-hiddenclass="header--not-sticked" >
+	<div class="kl-header-bg "></div><div class="site-header-wrapper sticky-top-area">
+
+    <div class="kl-top-header site-header-main-wrapper clearfix">
+
+        <div class="container siteheader-container ">
+
+            <div class="fxb-row fxb-row-col-sm">
+
+                
+                <div class='fxb-col fxb-basis-auto'>
+
+                    
+                                        <div class="fxb-row site-header-top">
+
+                                                <div class='fxb-col fxb fxb-start-x fxb-center-y fxb-basis-auto site-header-col-left site-header-top-left'>
+                            <ul class="sh-component social-icons sc--clean topnav navRight topnav-no-hdnav"><li class="topnav-li social-icons-li"><a href="https://www.facebook.com/servivueltascol/?fref=ts" data-zniconfam="kl-social-icons" data-zn_icon="" target="_blank" class="topnav-item social-icons-item scheader-icon-" title="Facebook"></a></li><li class="topnav-li social-icons-li"><a href=""  target="_blank" class="topnav-item social-icons-item scheader-icon-" title=""></a></li></ul><div class="sh-component kl-header-toptext kl-font-alt">Asesoría comercial:  <a class="fw-bold"> <i class="fa fa-mobile " aria-hidden="true" style="margin-right:5px; margin-left: 5px;"></i> 320 249 7821<i class="fa fa-phone" aria-hidden="true" style="margin-right:5px; margin-left: 5px;"></i>(+57) 738 8479</a></div>                                                    </div>
+                        
+                        
+                                                <div class='fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto site-header-col-right site-header-top-right'>
+                                                                                </div>
+                        
+                    </div><!-- /.site-header-top -->
+                    
+                    <div class="separator site-header-separator "></div>
+                    
+                    <div class="fxb-row site-header-main  header-no-bottom">
+
+                                                <div class='fxb-col fxb fxb-start-x fxb-center-y fxb-basis-auto fxb-grow-0 fxb-sm-full site-header-col-left site-header-main-left'>
+                            
+        <!-- logo container-->
+                <div class="logo-container hasInfoCard logosize--no">
+            <!-- Logo -->
+            <h1 class='site-logo logo ' id='logo'><a href='https://servivueltas.net/' class='site-logo-anch'><img class="logo-img site-logo-img" src="https://servivueltas.net/wp-content/uploads/2018/12/logosv.png" width="300" height="48"  alt="Servivueltas" title="Servicio ágil y Confiable" /></a></h1>            <!-- InfoCard -->
+            
+        <div id="infocard" class="logo-infocard">
+            <div class="custom ">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <p>&nbsp;</p>
+                                                                            <p style="text-align: center;">Deja en nuestras manos tu <strong>LOGÍSTICA</strong>, garantizamos entregas.</p>
+                                            </div>
+
+                    <div class="col-sm-7">
+                        <div class="custom contact-details">
+
+                                                        <p>
+                                                                    <strong>Asesoría Comercial: (+57) 381 9933 (+57) 675 8019 Cel:  320 249 7821</strong><br>
+                                
+                                                                    E-mail:&nbsp;<a href="mailto:comercial@servivueltas.net">comercial@servivueltas.net</a>
+                                                            </p>
+                            
+                                                            <p>
+                                Servivueltas<br/>Street nr 100, 4536534, Chicago, US                                </p>
+                            
+                                                            <a href="http://goo.gl/maps/1OhOu" target="_blank" class="map-link">
+                                    <span class="glyphicon glyphicon-map-marker kl-icon-white"></span>
+                                    <span>Open in Google Maps</span>
+                                </a>
+                            
+                        </div>
+
+                        <div style="height:20px;"></div>
+
+                        <ul class="social-icons sc--clean"><li class="social-icons-li"><a href="https://www.facebook.com/servivueltascol/?fref=ts" data-zniconfam="kl-social-icons" data-zn_icon="" target="_blank" title="Facebook"></a></li><li class="social-icons-li"><a href=""  target="_blank" title=""></a></li></ul>                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+
+        <div class="separator site-header-separator visible-xs"></div>                        </div>
+                        
+                                                <div class='fxb-col fxb fxb-center-x fxb-center-y fxb-basis-auto fxb-sm-half site-header-col-center site-header-main-center'>
+                            
+        <div class="sh-component zn-res-menuwrapper">
+            <a href="#" class="zn-res-trigger zn-header-icon"></a>
+        </div><!-- end responsive menu -->
+
+        <div id="main-menu" class="sh-component main-nav nav-mm--light zn_mega_wrapper "><ul id="menu-main-menu" class="main-menu main-menu-nav zn_mega_menu "><li id="menu-item-1777" class="main-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-1777  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="#nosotros" class=" main-menu-link main-menu-link-top">NOSOTROS</a></li>
+<li id="menu-item-1538" class="main-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-1538  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="#servicios" class=" main-menu-link main-menu-link-top">PERSONAS</a></li>
+<li id="menu-item-1857" class="main-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-1857  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="#empresas" class=" main-menu-link main-menu-link-top">EMPRESAS</a></li>
+<li id="menu-item-1543" class="main-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-1543  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="#contacto" class=" main-menu-link main-menu-link-top">CONTACTO</a></li>
+<li id="menu-item-1537" class="main-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-1537  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="#unete" class=" main-menu-link main-menu-link-top">ÚNETE</a></li>
+</ul></div>        <!-- end main_menu -->
+                                </div>
+                        
+                                                <div class='fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto fxb-sm-half site-header-col-right site-header-main-right'>
+                            <div class="fxb-row fxb-row-col fxb-center-y">
+
+                                                                <div class='fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto fxb-sm-half site-header-main-right-top'>
+                                                                        <a href="#login_panel"  id="ctabutton"  class="sh-component ctabutton kl-cta-ribbon " title="Click to open a modal window" data-lightbox="inline"><strong>INICIAR</strong> SESIÓN<svg version="1.1" class="trisvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" preserveAspectRatio="none" width="14px" height="5px" viewBox="0 0 14.017 5.006" enable-background="new 0 0 14.017 5.006" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.016,0L7.008,5.006L0,0H14.016z"></path></svg></a>                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        
+                    </div><!-- /.site-header-main -->
+
+                                    </div>
+            </div>
+                    </div><!-- /.siteheader-container -->
+    </div><!-- /.site-header-main-wrapper -->
+
+    
+</div><!-- /.site-header-wrapper -->
+
+</header>
+
+<div class="zn_pb_wrapper clearfix zn_sortable_content" data-droplevel="0"><div id="inicio" class="zn_anchor_point "></div>		<section class="zn_section eluidb5f03bfa     section--no " id="eluidb5f03bfa" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluid78af858b  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			<div class="zn_custom_html eluid1d4ccc25">
+<div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;padding:0px;margin-top:0px;margin-bottom:0px;">
+<!-- START REVOLUTION SLIDER 5.0.6 fullwidth mode -->
+	<div id="rev_slider_1_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.6">
+<ul>	<!-- SLIDE  -->
+	<li data-index="rs-4" data-transition="fade" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="https://servivueltas.net/wp-content/uploads/2016/12/ban3-1-100x50.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Vueltas" data-description="">
+		<!-- MAIN IMAGE -->
+		<img src="https://servivueltas.net/wp-content/uploads/2016/12/ban3-1.jpg"  alt=""  width="1920" height="790" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 1 -->
+		<div class="tp-caption Fashion-BigDisplay tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-4-layer-15" 
+			 data-x="['left','left','left','left']" data-hoffset="['-654','-654','-654','-664']" 
+			 data-y="['top','top','top','top']" data-voffset="['339','339','339','122']" 
+						data-width="['3150','3150','3150','3153']"
+			data-height="['436','436','436','882']"
+			data-whitespace="normal"
+			data-transform_idle="o:1;skX:-20px;"
+ 
+			 data-transform_in="x:left;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="x:left;s:300;s:300;" 
+			data-start="500" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 5;background-color:rgba(0, 0, 0, 0.50);border-color:rgba(0, 0, 0, 0.50);border-radius:5px 5px 5px 5px;"> 
+		</div>
+
+		<!-- LAYER NR. 2 -->
+		<div class="tp-caption Fashion-BigDisplay tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-4-layer-19" 
+			 data-x="['left','left','left','left']" data-hoffset="['819','629','56','37']" 
+			 data-y="['top','top','top','top']" data-voffset="['373','372','476','374']" 
+						data-width="79"
+			data-height="78"
+			data-whitespace="normal"
+			data-transform_idle="o:1;skX:-20px;"
+ 
+			 data-transform_in="x:-50px;opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="1300" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 6;background-color:rgba(223, 89, 34, 0.80);border-color:rgba(0, 0, 0, 0.50);border-radius:5px 5px 5px 5px;"> 
+		</div>
+
+		<!-- LAYER NR. 3 -->
+		<div class="tp-caption Fashion-BigDisplay tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-4-layer-17" 
+			 data-x="['left','left','left','left']" data-hoffset="['518','336','419','52']" 
+			 data-y="['top','top','top','top']" data-voffset="['373','373','371','274']" 
+						data-width="79"
+			data-height="78"
+			data-whitespace="normal"
+			data-transform_idle="o:1;skX:-20px;"
+ 
+			 data-transform_in="x:-50px;opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="1000" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 7;background-color:rgba(223, 89, 34, 0.80);border-color:rgba(0, 0, 0, 0.50);border-radius:5px 5px 5px 5px;"> 
+		</div>
+
+		<!-- LAYER NR. 4 -->
+		<div class="tp-caption Fashion-BigDisplay tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-4-layer-1" 
+			 data-x="['left','left','left','left']" data-hoffset="['192','38','77','68']" 
+			 data-y="['top','top','top','top']" data-voffset="['378','374','374','176']" 
+						data-width="79"
+			data-height="78"
+			data-whitespace="normal"
+			data-transform_idle="o:1;skX:-20px;"
+ 
+			 data-transform_in="x:left;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="700" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 8;background-color:rgba(223, 89, 34, 0.80);border-color:rgba(0, 0, 0, 0.50);border-radius:5px 5px 5px 5px;"> 
+		</div>
+
+		<!-- LAYER NR. 5 -->
+		<div class="tp-caption   tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-4-layer-5" 
+			 data-x="['left','left','left','left']" data-hoffset="['541','355','441','73']" 
+			 data-y="['top','top','top','top']" data-voffset="['378','379','376','281']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:-50px;opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="1000" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 9; white-space: nowrap; font-size: 60px; line-height: 60px; font-weight: 900; color: rgba(255, 255, 255, 1.00);">2 
+		</div>
+
+		<!-- LAYER NR. 6 -->
+		<div class="tp-caption   tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-4-layer-6" 
+			 data-x="['left','left','left','left']" data-hoffset="['842','651','78','62']" 
+			 data-y="['top','top','top','top']" data-voffset="['381','379','483','380']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="1400" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 10; white-space: nowrap; font-size: 60px; line-height: 60px; font-weight: 900; color: rgba(255, 255, 255, 1.00);">3
+ 
+		</div>
+
+		<!-- LAYER NR. 7 -->
+		<div class="tp-caption   tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-4-layer-4" 
+			 data-x="['left','left','left','left']" data-hoffset="['213','58','94','87']" 
+			 data-y="['top','top','top','top']" data-voffset="['403','404','401','201']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:-50px;opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="800" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 11; white-space: nowrap; font-size: 60px; line-height: 22px; font-weight: 700; color: rgba(255, 255, 255, 1.00);">1 
+		</div>
+
+		<!-- LAYER NR. 8 -->
+		<div class="tp-caption   tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-4-layer-8" 
+			 data-x="['left','left','left','left']" data-hoffset="['297','140','187','177']" 
+			 data-y="['top','top','top','top']" data-voffset="['388','385','382','181']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:50px;opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="x:50px;opacity:0;s:300;s:300;" 
+			data-start="900" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 12; white-space: nowrap; font-size: 30px; line-height: 33px; font-weight: 500; color: rgba(255, 255, 255, 1.00);">¿ Qué 
+		</div>
+
+		<!-- LAYER NR. 9 -->
+		<div class="tp-caption   tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-4-layer-11" 
+			 data-x="['left','left','left','left']" data-hoffset="['628','459','551','179']" 
+			 data-y="['top','top','top','top']" data-voffset="['388','391','376','289']" 
+						data-lineheight="['32','32','45','45']"
+			data-width="['146','146','none','none']"
+			data-height="none"
+			data-whitespace="['normal','normal','nowrap','nowrap']"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:50px;opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="1200" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 13; min-width: 146px; max-width: 146px; white-space: normal; font-size: 30px; line-height: 32px; font-weight: 500; color: rgba(255, 255, 255, 1.00);">Solicita tu  
+		</div>
+
+		<!-- LAYER NR. 10 -->
+		<div class="tp-caption   tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-4-layer-14" 
+			 data-x="['left','left','left','left']" data-hoffset="['932','742','178','172']" 
+			 data-y="['top','top','top','top']" data-voffset="['379','380','485','383']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:50px;opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="x:50px;opacity:0;s:300;s:300;" 
+			data-start="1500" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 14; white-space: nowrap; font-size: 30px; line-height: 33px; font-weight: 500; color: rgba(255, 255, 255, 1.00);">Tu servicio en  
+		</div>
+
+		<!-- LAYER NR. 11 -->
+		<div class="tp-caption rev-btn  rs-parallaxlevel-0" 
+			 id="slide-4-layer-23" 
+			 data-x="['left','left','left','left']" data-hoffset="['500','348','405','60']" 
+			 data-y="['top','top','top','top']" data-voffset="['503','500','487','506']" 
+						data-width="273"
+			data-height="48"
+			data-whitespace="normal"
+			data-transform_idle="o:1;"
+				data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:0;e:Linear.easeNone;"
+				data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(255, 255, 255, 0.50);bc:rgba(255, 255, 255, 0.50);cursor:pointer;"
+ 
+			 data-transform_in="x:-50px;opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="1600" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-actions='[{"event":"click","action":"simplelink","target":"_self","url":""}]'
+			data-responsive_offset="on" 
+			data-responsive="off"
+			
+			style="z-index: 15; min-width: 273px; max-width: 273px; max-width: 48px; max-width: 48px; white-space: normal; font-size: 17px; line-height: 17px; font-weight: 600; color: rgba(255, 255, 255, 1.00);font-family:Roboto;text-align:center;padding:12px 35px 12px 35px;border-color:rgba(255, 255, 255, 1.00);border-style:solid;border-width:3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;"><a href="#forgot_panel" data-lightbox="inline" style="color:#fff;" >Solicita Ya</a> 
+		</div>
+
+		<!-- LAYER NR. 12 -->
+		<div class="tp-caption   tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-4-layer-25" 
+			 data-x="['left','left','left','left']" data-hoffset="['299','136','185','175']" 
+			 data-y="['top','top','top','top']" data-voffset="['407','408','402','205']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:50px;opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="x:50px;opacity:0;s:300;s:300;" 
+			data-start="900" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 16; white-space: nowrap; font-size: 30px; line-height: 60px; font-weight: 900; color: rgba(255, 255, 255, 1.00);">necesitas ? 
+		</div>
+
+		<!-- LAYER NR. 13 -->
+		<div class="tp-caption   tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-4-layer-26" 
+			 data-x="['left','left','left','left']" data-hoffset="['628','459','550','180']" 
+			 data-y="['top','top','top','top']" data-voffset="['407','404','405','318']" 
+						data-lineheight="['60','60','45','45']"
+			data-width="['146','146','none','none']"
+			data-height="none"
+			data-whitespace="['normal','normal','nowrap','nowrap']"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:50px;opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="1200" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 17; min-width: 146px; max-width: 146px; white-space: normal; font-size: 30px; line-height: 60px; font-weight: 900; color: rgba(255, 255, 255, 1.00);">servicio 
+		</div>
+
+		<!-- LAYER NR. 14 -->
+		<div class="tp-caption   tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-4-layer-27" 
+			 data-x="['left','left','left','left']" data-hoffset="['936','741','172','173']" 
+			 data-y="['top','top','top','top']" data-voffset="['403','399','506','402']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:50px;opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="x:50px;opacity:0;s:300;s:300;" 
+			data-start="1500" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 18; white-space: nowrap; font-size: 30px; line-height: 60px; font-weight: 900; color: rgba(255, 255, 255, 1.00);">40 minutos 
+		</div>
+	</li>
+	<!-- SLIDE  -->
+	<li data-index="rs-1" data-transition="fade" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Servicios" data-description="">
+		<!-- MAIN IMAGE -->
+		<img src="https://servivueltas.net/wp-content/plugins/revslider/admin/assets/images/transparent.png" style='background-color:#454545' alt=""  width="1920" height="1080" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 1 -->
+		<div class="tp-caption   tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-1-layer-8" 
+			 data-x="['left','left','left','left']" data-hoffset="['-338','-208','-401','-402']" 
+			 data-y="['top','top','top','top']" data-voffset="['1','-1','-3','-6']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:left;skX:45px;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="500" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 5;"><img src="https://egogc.com/propuestas/servivueltasdos/wp-content/uploads/2016/11/izquierda-1.jpg" alt="" data-ww="['960px','960px','960px','960px']" data-hh="['700px','700px','700px','700px']" data-no-retina> 
+		</div>
+
+		<!-- LAYER NR. 2 -->
+		<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-1-layer-7" 
+			 data-x="['left','left','left','left']" data-hoffset="['345','382','138','127']" 
+			 data-y="['top','top','top','top']" data-voffset="['402','405','371','427']" 
+						data-width="222"
+			data-height="64"
+			data-whitespace="normal"
+			data-transform_idle="o:0.85;skX:20px;"
+				data-transform_hover="o:1;skX:20px;rX:0;rY:0;rZ:0;z:0;s:0;e:Power0.easeIn;"
+				data-style_hover="c:rgba(255, 255, 255, 1.00);td:overline;bc:rgba(150, 150, 150, 1.00);cursor:pointer;"
+ 
+			 data-transform_in="x:-50px;opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="900" 
+			data-actions='[{"event":"click","action":"simplelink","target":"_self","url":"#hola"}]'
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 6;font-family:Impact, Charcoal, sans-serif;background-color:rgba(223, 89, 34, 0.80);border-radius:5px 5px 5px 5px;background:linear-gradient(to left, rgba(223,89,34,0.9), rgba(223,89,34,0.9));-webkit-box-shadow:5px 0px 0px -1px rgba(183,69,22,1);-moz-box-shadow:5px 0px 0px -1px rgba(183,69,22,1);box-shadow:5px 0px 0px -1px rgba(183,69,22,1);"> 
+		</div>
+
+		<!-- LAYER NR. 3 -->
+		<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-1-layer-13" 
+			 data-x="['left','left','left','left']" data-hoffset="['-472','-441','-460','-469']" 
+			 data-y="['top','top','top','top']" data-voffset="['405','407','298','355']" 
+						data-width="800"
+			data-height="64"
+			data-whitespace="normal"
+			data-transform_idle="o:0.85;skX:20px;z:-1;"
+ 
+			 data-transform_in="x:left;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="800" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 7;font-family:Impact, Charcoal, sans-serif;background-color:rgba(0, 0, 0, 0.80);border-radius:5px 5px 5px 5px;background:linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.9));box-shadow:0px 0px 0px #000;"> 
+		</div>
+
+		<!-- LAYER NR. 4 -->
+		<div class="tp-caption   tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-1-layer-15" 
+			 data-x="['left','left','left','left']" data-hoffset="['4','114','55','34']" 
+			 data-y="['top','top','top','top']" data-voffset="['427','427','318','372']" 
+						data-width="662"
+			data-height="64"
+			data-whitespace="normal"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="800" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 8; min-width: 662px; max-width: 662px; max-width: 64px; max-width: 64px; white-space: normal; font-size: 35px; line-height: 22px; font-weight: 600; color: rgba(255, 255, 255, 1.00);font-family:Verdana, Geneva, sans-serif;">EMPRESAS 
+		</div>
+
+		<!-- LAYER NR. 5 -->
+		<div class="tp-caption   tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-1-layer-16" 
+			 data-x="['left','left','left','left']" data-hoffset="['401','442','207','191']" 
+			 data-y="['top','top','top','top']" data-voffset="['405','409','376','430']" 
+						data-width="['662','662','115','662']"
+			data-height="none"
+			data-whitespace="normal"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:-50px;opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="900" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 9; min-width: 662px; max-width: 662px; white-space: normal; font-size: 20px; line-height: 60px; font-weight: 500; color: rgba(255, 255, 255, 1.00);font-family:'Trebuchet MS', Helvetica, sans-serif;"><a href="#empresas" style="color:#fff; text-decoration:none;" data-target="smoothscroll"> CONSULTAR </a> 
+		</div>
+
+		<!-- LAYER NR. 6 -->
+		<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-1-layer-17" 
+			 data-x="['left','left','left','left']" data-hoffset="['-493','-411','-611','-633']" 
+			 data-y="['top','top','top','top']" data-voffset="['493','494','455','506']" 
+						data-width="1000"
+			data-height="44"
+			data-whitespace="normal"
+			data-transform_idle="o:0.85;skX:20px;z:-1;"
+ 
+			 data-transform_in="x:left;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="1000" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 10;font-family:Impact, Charcoal, sans-serif;background-color:rgba(0, 0, 0, 0.80);border-radius:3px 3px 3px 3px;background:linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.9));box-shadow:0px 0px 0px #000;"> 
+		</div>
+
+		<!-- LAYER NR. 7 -->
+		<div class="tp-caption descripcion   tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-1-layer-18" 
+			 data-x="['left','left','left','left']" data-hoffset="['128','271','71','85']" 
+			 data-y="['top','top','top','top']" data-voffset="['485','487','449','499']" 
+						data-fontsize="['22','19','19','17']"
+			data-width="662"
+			data-height="64"
+			data-whitespace="normal"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="1000" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 11; min-width: 662px; max-width: 662px; max-width: 64px; max-width: 64px; white-space: normal; font-size: 22px;">Líderes en mensajería outsuorcing   
+		</div>
+
+		<!-- LAYER NR. 8 -->
+		<div class="tp-caption   tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-1-layer-9" 
+			 data-x="['left','left','left','left']" data-hoffset="['620','625','403','603']" 
+			 data-y="['top','top','top','top']" data-voffset="['-1','0','-13','-34']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:right;skX:-85px;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="500" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 12;"><img src="https://egogc.com/propuestas/servivueltasdos/wp-content/uploads/2016/11/derecha-1.jpg" alt="" data-ww="['960px','960px','960px','960px']" data-hh="['700px','700px','700px','700px']" data-no-retina> 
+		</div>
+
+		<!-- LAYER NR. 9 -->
+		<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-1-layer-21" 
+			 data-x="['left','left','left','left']" data-hoffset="['712','675','434','-650']" 
+			 data-y="['top','top','top','top']" data-voffset="['494','496','455','280']" 
+						data-width="1000"
+			data-height="44"
+			data-whitespace="normal"
+			data-transform_idle="o:0.85;skX:20px;z:-1;"
+ 
+			 data-transform_in="x:right;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="1300" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 13;font-family:Impact, Charcoal, sans-serif;background-color:rgba(0, 0, 0, 0.80);border-radius:3px 3px 3px 3px;background:linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.9));box-shadow:0px 0px 0px #000;"> 
+		</div>
+
+		<!-- LAYER NR. 10 -->
+		<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-1-layer-20" 
+			 data-x="['left','left','left','left']" data-hoffset="['649','649','431','103']" 
+			 data-y="['top','top','top','top']" data-voffset="['403','403','376','198']" 
+						data-width="222"
+			data-height="64"
+			data-whitespace="normal"
+			data-transform_idle="o:0.85;skX:20px;"
+				data-transform_hover="o:1;skX:20px;rX:0;rY:0;rZ:0;z:0;s:0;e:Power0.easeIn;"
+				data-style_hover="c:rgba(255, 255, 255, 1.00);td:overline;bc:rgba(150, 150, 150, 1.00);cursor:pointer;"
+ 
+			 data-transform_in="x:right;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="1200" 
+			data-actions='[{"event":"click","action":"simplelink","target":"_self","url":"#hola"}]'
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 14;font-family:Impact, Charcoal, sans-serif;background-color:rgba(223, 89, 34, 0.80);border-radius:5px 5px 5px 5px;background:linear-gradient(to left, rgba(223,89,34,0.9), rgba(223,89,34,0.9));-webkit-box-shadow:-5px 0px 0px -1px rgba(183,69,22,1);-moz-box-shadow:-5px 0px 0px -1px rgba(183,69,22,1);box-shadow:-5px 0px 0px -1px rgba(183,69,22,1);"> 
+		</div>
+
+		<!-- LAYER NR. 11 -->
+		<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-1-layer-19" 
+			 data-x="['left','left','left','left']" data-hoffset="['889','889','401','-502']" 
+			 data-y="['top','top','top','top']" data-voffset="['403','403','300','117']" 
+						data-width="800"
+			data-height="64"
+			data-whitespace="normal"
+			data-transform_idle="o:0.85;skX:20px;z:-1;"
+ 
+			 data-transform_in="x:right;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="1100" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 15;font-family:Impact, Charcoal, sans-serif;background-color:rgba(0, 0, 0, 0.80);border-radius:5px 5px 5px 5px;background:linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.9));box-shadow:0px 0px 0px #000;"> 
+		</div>
+
+		<!-- LAYER NR. 12 -->
+		<div class="tp-caption   tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-1-layer-22" 
+			 data-x="['left','left','left','left']" data-hoffset="['938','938','448','33']" 
+			 data-y="['top','top','top','top']" data-voffset="['406','406','298','121']" 
+						data-width="662"
+			data-height="64"
+			data-whitespace="normal"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="1100" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 16; min-width: 662px; max-width: 662px; max-width: 64px; max-width: 64px; white-space: normal; font-size: 35px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 1.00);font-family:Verdana, Geneva, sans-serif;">PERSONAS 
+		</div>
+
+		<!-- LAYER NR. 13 -->
+		<div class="tp-caption   tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-1-layer-23" 
+			 data-x="['left','left','left','left']" data-hoffset="['699','699','473','184']" 
+			 data-y="['top','top','top','top']" data-voffset="['407','407','376','200']" 
+						data-width="152"
+			data-height="61"
+			data-whitespace="normal"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:50px;opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="1000" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 17; min-width: 152px; max-width: 152px; max-width: 61px; max-width: 61px; white-space: normal; font-size: 20px; line-height: 60px; font-weight: 500; color: rgba(0, 0, 0, 1.00);font-family:'Trebuchet MS', Helvetica, sans-serif;"><a href="#servicios" style="color:#fff; text-decoration:none;" data-target="smoothscroll"> CONSULTAR </a> 
+		</div>
+
+		<!-- LAYER NR. 14 -->
+		<div class="tp-caption descripcion   tp-resizeme rs-parallaxlevel-0" 
+			 id="slide-1-layer-24" 
+			 data-x="['left','left','left','left']" data-hoffset="['749','700','451','55']" 
+			 data-y="['top','top','top','top']" data-voffset="['486','489','447','271']" 
+						data-fontsize="['20','19','19','17']"
+			data-lineheight="['60','60','60','61']"
+			data-width="['662','662','662','663']"
+			data-height="['64','64','64','none']"
+			data-whitespace="normal"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="1350" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 18; min-width: 662px; max-width: 662px; max-width: 64px; max-width: 64px; white-space: normal; font-size: 20px;">Con un <a href="#forgot_panel" data-lightbox="inline" class="eModal-1" >click</a> un mensajero confiable 
+		</div>
+	</li>
+</ul>
+<div class="tp-bannertimer tp-bottom" style="height: 5px; background-color: rgba(223, 89, 34, 0.30);"></div>	</div>
+<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss=".tp-caption.Fashion-BigDisplay,.Fashion-BigDisplay{color:rgba(0,0,0,1.00);font-size:60px;line-height:60px;font-weight:900;font-style:normal;font-family:Raleway;padding:0px 0px 0px 0px;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0px 0px 0px 0px;letter-spacing:2px}.tp-caption.descripcion,.descripcion{color:rgba(255,255,255,1.00);font-size:17px;line-height:60px;font-weight:100;font-style:normal;font-family:Arial,Helvetica,sans-serif;padding:0px 0px 0px 0px;text-decoration:none;text-align:left;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0px 0px 0px 0px}";
+				if(htmlDiv) {
+					htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+				}
+				else{
+					var htmlDiv = document.createElement("div");
+					htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+					document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+				}
+			</script>
+		<script type="text/javascript">
+
+			/******************************************
+				-	PREPARE PLACEHOLDER FOR SLIDER	-
+			******************************************/
+
+			var setREVStartSize=function(){
+				try{var e=new Object,i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+					e.c = jQuery('#rev_slider_1_1');
+					e.responsiveLevels = [1240,1024,778,480];
+					e.gridwidth = [1240,1024,778,480];
+					e.gridheight = [700,700,600,600];
+							
+					e.sliderLayout = "fullwidth";
+					if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})
+				}catch(d){console.log("Failure at Presize of Slider:"+d)}
+			};
+						
+				
+			setREVStartSize();
+			function revslider_showDoubleJqueryError(sliderID) {
+					var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+					errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+					errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+					errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+					errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>"
+						jQuery(sliderID).show().html(errorMessage);
+				}
+			var tpj=jQuery;
+			
+			var revapi1;
+			tpj(document).ready(function() {
+				if(tpj("#rev_slider_1_1").revolution == undefined){
+					revslider_showDoubleJqueryError("#rev_slider_1_1");
+				}else{
+					revapi1 = tpj("#rev_slider_1_1").show().revolution({
+						sliderType:"standard",
+						jsFileLocation:"https://servivueltas.net/wp-content/plugins/revslider/public/assets/js/",
+						sliderLayout:"fullwidth",
+						dottedOverlay:"none",
+						delay:11000,
+						navigation: {
+							keyboardNavigation:"off",
+							keyboard_direction: "horizontal",
+							mouseScrollNavigation:"off",
+							onHoverStop:"on",
+							touch:{
+								touchenabled:"on",
+								swipe_threshold: 75,
+								swipe_min_touches: 50,
+								swipe_direction: "horizontal",
+								drag_block_vertical: false
+							}
+							,
+							arrows: {
+								style:"persephone",
+								enable:true,
+								hide_onmobile:true,
+								hide_under:600,
+								hide_onleave:true,
+								hide_delay:200,
+								hide_delay_mobile:1200,
+								tmp:'',
+								left: {
+									h_align:"left",
+									v_align:"center",
+									h_offset:30,
+									v_offset:0
+								},
+								right: {
+									h_align:"right",
+									v_align:"center",
+									h_offset:30,
+									v_offset:0
+								}
+							}
+						},
+						responsiveLevels:[1240,1024,778,480],
+						gridwidth:[1240,1024,778,480],
+						gridheight:[700,700,600,600],
+						lazyType:"none",
+						parallax: {
+							type:"mouse",
+							origo:"slidercenter",
+							speed:2000,
+							levels:[2,3,4,5,6,7,12,16,10,50],
+						},
+						shadow:0,
+						spinner:"spinner2",
+						stopLoop:"off",
+						stopAfterLoops:-1,
+						stopAtSlide:-1,
+						shuffle:"off",
+						autoHeight:"off",
+						hideThumbsOnMobile:"off",
+						hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						startWithSlide:0,
+						debugMode:false,
+						fallbacks: {
+							simplifyAll:"off",
+							nextSlideOnWindowFocus:"off",
+							disableFocusListener:false,
+						}
+					});
+				}
+			});	/*ready*/
+		</script>
+		<script>
+					var htmlDivCss = ' #rev_slider_1_1_wrapper .tp-loader.spinner2{ background-color: #df5922 !important; } ';
+					var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+					if(htmlDiv) {
+						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+					}
+					else{
+						var htmlDiv = document.createElement('div');
+						htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+						document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+					}
+				  </script>
+				  <script>
+					var htmlDivCss = unescape(".persephone.tparrows%20%7B%0A%09cursor%3Apointer%3B%0A%09background%3A%23aaa%3B%0A%09background%3Argba%28200%2C200%2C200%2C0.5%29%3B%0A%09width%3A40px%3B%0A%09height%3A40px%3B%0A%09position%3Aabsolute%3B%0A%09display%3Ablock%3B%0A%09z-index%3A100%3B%0A%20%20border%3A1px%20solid%20%23f5f5f5%3B%0A%7D%0A.persephone.tparrows%3Ahover%20%7B%0A%09background%3A%23333%3B%0A%7D%0A.persephone.tparrows%3Abefore%20%7B%0A%09font-family%3A%20%22revicons%22%3B%0A%09font-size%3A15px%3B%0A%09color%3A%23fff%3B%0A%09display%3Ablock%3B%0A%09line-height%3A%2040px%3B%0A%09text-align%3A%20center%3B%0A%7D%0A.persephone.tparrows.tp-leftarrow%3Abefore%20%7B%0A%09content%3A%20%22%5Ce824%22%3B%0A%7D%0A.persephone.tparrows.tp-rightarrow%3Abefore%20%7B%0A%09content%3A%20%22%5Ce825%22%3B%0A%7D%0A%0A%0A");
+					var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+					if(htmlDiv) {
+						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+					}
+					else{
+						var htmlDiv = document.createElement('div');
+						htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+						document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+					}
+				  </script>
+				</div><!-- END REVOLUTION SLIDER --></div>		</div>
+	
+				</div>
+			</div>
+
+            		</section>
+	<div id="eluidbbdf9292" class="zn_anchor_point "></div>		<section class="zn_section eluid35b44958     section--no " id="eluid35b44958" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluid6c6418ca  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			<div class="action_box eluid87b4746b  actionbox--light style3" data-arrowpos="center"><div class="action_box_inner action_box-inner"><div class="action_box_content action_box-content"><div class="ac-content-text action_box-text"><h4 class="text action_box-title"><span class="fw-thin">EL ALIADO QUE NECESITAS PARA TUS <span class="fw-semibold">RASTREOS</span> <STRONG>DE ENVIOS CON SERVIENTREGA.</STRONG></span></h4><h5 class="ac-subtitle action_box-subtitle">Servicio ágil y confiable.</h5></div><div class="ac-buttons action_box-buttons"><a href="#servicios"  class="btn ac-btn action_box-button action_box-button-first btn-lined" title="" data-target="smoothscroll">SERVICIOS</a><a href="#eluida667c8b7"  class="btn ac-btn action_box-button action_box-button-second btn-fullwhite" title="" data-lightbox="inline">CONTÁCTENOS</a></div></div></div></div>		</div>
+	
+				</div>
+			</div>
+
+            		</section>
+			<section class="zn_section eluid757192d7     section--no " id="eluid757192d7" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluidb362a9ff  col-sm-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+					</div>
+	
+				</div>
+			</div>
+
+            		</section>
+	<div id="nosotros" class="zn_anchor_point "></div>		<section class="zn_section eluidda4e6de8     section--no " id="eluidda4e6de8" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluidbede3eeb  col-md-6 col-sm-6    zn_sortable_content zn_content " data-droplevel="2">
+			<div id="eluide45a5ad5" class="zn_anchor_point "></div>
+	<div class="zn_custom_container eluid89f95c9e  clearfix">
+					<div class="row zn_columns_container zn_content " data-droplevel="1">
+				
+		<div class="eluidf47722a1  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			<div class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--line  tbk-icon-pos--after-title eluidd8a95869 "><h3 class="tbk__title "><h1><strong>BIENVENIDOS SOMOS <span class="text-custom fw-normal"> ALIADOS</span> SERVIENTREGA</strong></h1></h3><span class="tbk__symbol "><span></span></span><h4 class="tbk__subtitle">SERVIVUELTAS CAPITAL SAS, es una empresa colombiana con más de 15 años de experiencia somos aliados servientrega. Contamos con rastreo de envio, sedes en Bogotá, Cali y Medellín. </h4></div>			<div class="zn_separator clearfix eluid6d1f74ab "></div>
+				</div>
+				</div>
+			</div><!-- /.zn_custom_container -->
+
+
+			</div>
+	
+		<div class="eluidde350bfd  col-md-6 col-sm-6    zn_sortable_content zn_content " data-droplevel="2">
+			
+	<div class="zn_custom_container eluida8def4c9  clearfix">
+					<div class="row zn_columns_container zn_content " data-droplevel="1">
+				
+		<div class="eluida86a74a9  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			<div class="circle-text-box eluid357dff81  circletitlebox--light element-scheme--light style2"><div class="circle-headline"><span class="wpk-circle-span"><span>AQUÍ</span></span> <h4 class="wpk-circle-title text-custom">NOSOTROS</h4></div><p>Nuestra empresa fue creada con el objetivo rastrear envios y paquetes somos aliados servientrega de convertirnos en tu aliado permanente para realizar tus trámites y diligencias de manera inmediata en el lugar y hora que lo requieras. Contamos con rastreo y envio de paquetes, agilidad y cumplimiento a un bajo costo, para que así, tu y tu empresa optimicen el tiempo y minimicen gastos, somos aliados servientrega.”</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>		</div>
+				</div>
+			</div><!-- /.zn_custom_container -->
+
+
+			</div>
+	
+				</div>
+			</div>
+
+            		</section>
+			<section class="zn_section eluida57bf773     zn_section--masked zn_section--relative section--no " id="eluida57bf773" >
+
+            <div class="kl-bg-source">
+                <div class="kl-video-container kl-bg-source__video">
+                    <div class="kl-video-wrapper video-grid-overlay">
+                
+                        <!-- Self Hosted Video Source -->
+                        <div
+                            class="kl-video valign halign"
+                            style="width: 100%; height: 100%;"
+                            data-setup='{
+                                "position": "absolute",
+                                "loop": true,
+                                "autoplay": true,
+                                "muted": true,
+                                "mp4":"http://egogc.com/propuestas/servivueltasdos/wp-content/uploads/2016/10/SERVI.mp4",
+                                
+                                
+                                "fallback_image":"http://kallyas.net/demos/wp-content/uploads/2015/11/headvideo.jpg",
+                                "video_ratio": "1.7778"
+                            }'
+                        ></div>
+                    </div>
+                    <!-- // video-wrapper -->
+                </div>
+                <!-- // video-container -->
+                </div>
+			<div class="zn_section_size full_width">
+				<div class="row zn_columns_container zn_content gutter-0" data-droplevel="1">
+
+					
+		<div class="eluid0f385709  col-md-6 col-sm-6    zn_sortable_content zn_content " data-droplevel="2">
+			
+	<div class="zn_custom_container eluidee1cbb9c  clearfix">
+					<div class="row zn_columns_container zn_content gutter-0" data-droplevel="1">
+				
+		<div class="eluid8391f8e0  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			<div class="kl-iconbox eluid2ed10931   kl-iconbox--type-img  kl-iconbox--fright kl-iconbox--align-right text-right  kl-iconbox--theme-light element-scheme--light" >
+	<div class="kl-iconbox__inner">
+
+		
+		<div class="kl-iconbox__icon-wrapper ">
+			<img class="kl-iconbox__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/2.png" alt="MULTIPLATAFORMA">		</div><!-- /.kl-iconbox__icon-wrapper -->
+
+		<div class="kl-iconbox__content-wrapper">
+
+			
+			<div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+				<h3 class="kl-iconbox__title element-scheme__hdg1">MULTIPLATAFORMA</h3>
+			</div>
+						<div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+				<p class="kl-iconbox__desc">Solicita tu servicio desde tu smartphone, <br>computador o teléfono fijo.</p>
+			</div>
+			
+			
+		</div><!-- /.kl-iconbox__content-wrapper -->
+
+	</div>
+</div>
+
+		</div>
+				</div>
+			</div><!-- /.zn_custom_container -->
+
+
+			</div>
+	
+		<div class="eluidcec89a3e  col-md-6 col-sm-6    zn_sortable_content zn_content " data-droplevel="2">
+			
+	<div class="zn_custom_container eluid0f284402  clearfix">
+					<div class="row zn_columns_container zn_content gutter-0" data-droplevel="1">
+				
+		<div class="eluidd712ffad  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			<div class="kl-iconbox eluidbfd8fa06   kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left  kl-iconbox--theme-light element-scheme--light" >
+	<div class="kl-iconbox__inner">
+
+		
+		<div class="kl-iconbox__icon-wrapper ">
+			<img class="kl-iconbox__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/1.png" alt="TIEMPO REAL">		</div><!-- /.kl-iconbox__icon-wrapper -->
+
+		<div class="kl-iconbox__content-wrapper">
+
+			
+			<div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+				<h3 class="kl-iconbox__title element-scheme__hdg1">TIEMPO REAL</h3>
+			</div>
+						<div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+				<p class="kl-iconbox__desc">Un mensajero confiable en menos de <br> <strong style="font-size:28px;"> 40  minutos.</strong></p>
+			</div>
+			
+			
+		</div><!-- /.kl-iconbox__content-wrapper -->
+
+	</div>
+</div>
+
+		</div>
+				</div>
+			</div><!-- /.zn_custom_container -->
+
+
+			</div>
+	
+				</div>
+			</div>
+
+            <div class="kl-bottommask kl-bottommask--mask3 kl-mask--light">
+<svg width="5000px" height="57px" class="svgmask " viewBox="0 0 5000 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-mask3">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feComposite in="shadowBlurInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0" in="shadowInnerInner1" type="matrix" result="shadowMatrixInner1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <path d="M9.09383679e-13,57.0005249 L9.09383679e-13,34.0075249 L2418,34.0075249 L2434,34.0075249 C2434,34.0075249 2441.89,33.2585249 2448,31.0245249 C2454.11,28.7905249 2479,11.0005249 2479,11.0005249 L2492,2.00052487 C2492,2.00052487 2495.121,-0.0374751261 2500,0.000524873861 C2505.267,-0.0294751261 2508,2.00052487 2508,2.00052487 L2521,11.0005249 C2521,11.0005249 2545.89,28.7905249 2552,31.0245249 C2558.11,33.2585249 2566,34.0075249 2566,34.0075249 L2582,34.0075249 L5000,34.0075249 L5000,57.0005249 L2500,57.0005249 L1148,57.0005249 L9.09383679e-13,57.0005249 Z" class="bmask-bgfill" filter="url(#filter-mask3)" fill="#f5f5f5" ></path>
+</svg>
+    <i class="glyphicon glyphicon-chevron-down"></i>
+    </div>		</section>
+			<section class="zn_section eluide10be98d     zn_section--masked zn_section--relative section--no " id="eluide10be98d" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluidcd9efdfb  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			<div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol-- tbk--colored tbk-icon-pos--before-title eluidb6a72b6f "><h3 class="tbk__title ">¿ QUÉ NOS DIFERENCIA ?</h3></div>		</div>
+	
+		<div class="eluid83f467d7  col-md-3 col-sm-3    zn_sortable_content zn_content " data-droplevel="2">
+					<div class="services_box eluidf92e1447  servicebox-sch--light element-scheme--light services_box--modern sb--hasicon">
+			<div class="services_box__inner clearfix">
+				<div class="services_box__icon sb--hashover"><div class="services_box__icon-inner"><img src="http://servivueltas.net/wp-content/uploads/2017/01/brief-1.png" alt="" class="services_box__iconimg services_box__iconimg-main"><img src="http://servivueltas.net/wp-content/uploads/2017/01/brief-2.png" alt="" class="services_box__iconimg services_box__iconimg-hover "></div></div><div class="services_box__content"><h4 class="services_box__title element-scheme__hdg1 ">Legalidad</h4><div class="services_box__desc"><p>Contamos con el plan de rastreo de envio y paquetes somos aliados servientrega, debidamente reglamentado e implementado por nuestra compañía.
+</p></div><div class="services_box__list-wrapper"><span class="services_box__list-bg"></span></div></div>			</div>
+			<!-- end box -->
+		</div>
+			</div>
+	
+		<div class="eluid6a193e11  col-md-3 col-sm-3    zn_sortable_content zn_content " data-droplevel="2">
+					<div class="services_box eluiddecbe593  servicebox-sch--light element-scheme--light services_box--modern sb--hasicon">
+			<div class="services_box__inner clearfix">
+				<div class="services_box__icon sb--hashover"><div class="services_box__icon-inner"><img src="http://servivueltas.net/wp-content/uploads/2017/01/plata-1.png" alt="" class="services_box__iconimg services_box__iconimg-main"><img src="http://servivueltas.net/wp-content/uploads/2017/01/plata-2.png" alt="" class="services_box__iconimg services_box__iconimg-hover "></div></div><div class="services_box__content"><h4 class="services_box__title element-scheme__hdg1 ">Plataforma Digital</h4><div class="services_box__desc"><p>En nuestra plataforma digital podrás solicitar servicios programados o inmediatos y hacer seguimiento.</p></div><div class="services_box__list-wrapper"><span class="services_box__list-bg"></span></div></div>			</div>
+			<!-- end box -->
+		</div>
+			</div>
+	
+		<div class="eluidafcf25e3  col-md-3 col-sm-3    zn_sortable_content zn_content " data-droplevel="2">
+					<div class="services_box eluiddd6acef7  servicebox-sch--light element-scheme--light services_box--modern sb--hasicon">
+			<div class="services_box__inner clearfix">
+				<div class="services_box__icon sb--hashover"><div class="services_box__icon-inner"><img src="http://servivueltas.net/wp-content/uploads/2017/01/secu-1.png" alt="" class="services_box__iconimg services_box__iconimg-main"><img src="http://servivueltas.net/wp-content/uploads/2017/01/secu-2.png" alt="" class="services_box__iconimg services_box__iconimg-hover "></div></div><div class="services_box__content"><h4 class="services_box__title element-scheme__hdg1 ">Seguridad</h4><div class="services_box__desc"><p>Nuestros colaboradores siguen el sistema de gestión y seguridad en el trabajo exigido por la  normatividad colombiana,rastrear envios y paquetes somos aliados servientrega .</p></div><div class="services_box__list-wrapper"><span class="services_box__list-bg"></span></div></div>			</div>
+			<!-- end box -->
+		</div>
+			</div>
+	
+		<div class="eluid548a1e4b  col-md-3 col-sm-3    zn_sortable_content zn_content " data-droplevel="2">
+					<div class="services_box eluid59cf744c  servicebox-sch--light element-scheme--light services_box--modern sb--hasicon">
+			<div class="services_box__inner clearfix">
+				<div class="services_box__icon sb--hashover"><div class="services_box__icon-inner"><img src="http://servivueltas.net/wp-content/uploads/2017/01/confi-1.png" alt="" class="services_box__iconimg services_box__iconimg-main"><img src="http://servivueltas.net/wp-content/uploads/2017/01/confi-2.png" alt="" class="services_box__iconimg services_box__iconimg-hover "></div></div><div class="services_box__content"><h4 class="services_box__title element-scheme__hdg1 ">Confianza</h4><div class="services_box__desc"><p>Nuestro personal esta capacitado  y calificado para prestar los servicios con  agilidad y cumplimiento.</p></div><div class="services_box__list-wrapper"><span class="services_box__list-bg"></span></div></div>			</div>
+			<!-- end box -->
+		</div>
+			</div>
+	
+				</div>
+			</div>
+
+            <div class="kl-bottommask kl-bottommask--shadow_simple_down kl-mask--light"></div>		</section>
+	<div id="servicios" class="zn_anchor_point "></div>		<section class="zn_section eluid1fbd0c75     section--no " id="eluid1fbd0c75" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluidfd9bb09a  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			<div class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--line tbk--colored tbk-icon-pos--after-title eluidd1409578 "><h3 class="tbk__title ">SERVICIOS PARA <span class="text-custom fw-normal">PERSONAS</span> </h3><span class="tbk__symbol "><span></span></span></div>		</div>
+	
+				</div>
+			</div>
+
+            		</section>
+			<div class="kl-slideshow kl-slideshow-css3panels eluid23eb0e2b  css3p--flexbox">
+
+			<div class="clearfix"></div>
+			<div class="fake-loading loading-1s"></div>
+
+			<div class="css3panels-container css3panels--resize cssp-capt-animated cssp-capt-default" data-panels="4" style="height:400px">
+				<div class="css3panel css3panel--1 cp-theme--light"><div class="css3panel-inner" style=" height:400px " ><div class="css3panel-mainimage-wrapper" style=" height:400px " ><div style="background-image:url(http://servivueltas.net/wp-content/uploads/2018/12/editshutterstock_98269457.jpg); " class="css3panel-mainimage"><div class="css3p-overlay css3p--overlay-color" style="background: rgba(0,0,0,0.1)"></div></div></div></div><div class="css3panel-caption  "><a href="#eluid6af4513b"  class="" title="" data-lightbox="inline"><h3 class="css3panel-title ff-alternative captiontitle--dbg title-size-normal">  Transporte y gestión de tus documentos Puerta a Puerta</h3></a><div class="css3panel-btn-area"></div><!-- /.btn-area --></div><!-- /.css3panel-caption --></div><div class="css3panel css3panel--2 cp-theme--light"><div class="css3panel-inner" style=" height:400px " ><div class="css3panel-mainimage-wrapper" style=" height:400px " ><div style="background-image:url(http://servivueltas.net/wp-content/uploads/2018/12/editshutterstock_361843610.jpg); " class="css3panel-mainimage"><div class="css3p-overlay css3p--overlay-color" style="background: rgba(0,0,0,0.1)"></div></div></div></div><div class="css3panel-caption  "><a href="#eluid3b7fd00e"  class="" title="" data-lightbox="inline"><h3 class="css3panel-title ff-alternative captiontitle--dbg title-size-normal">Transporte y gestión de tus paquetes</h3></a><div class="css3panel-btn-area"></div><!-- /.btn-area --></div><!-- /.css3panel-caption --></div><div class="css3panel css3panel--3 cp-theme--light"><div class="css3panel-inner" style=" height:400px " ><div class="css3panel-mainimage-wrapper" style=" height:400px " ><div style="background-image:url(http://servivueltas.net/wp-content/uploads/2018/12/editshutterstock_379865653.jpg); " class="css3panel-mainimage"><div class="css3p-overlay css3p--overlay-color" style="background: rgba(0,0,0,0.1)"></div></div></div></div><div class="css3panel-caption  "><a href="#eluid11ec32b7"  class="" title="" data-lightbox="inline"><h3 class="css3panel-title ff-alternative captiontitle--dbg title-size-normal">Logística de tus productos y tienda online</h3></a><div class="css3panel-btn-area"></div><!-- /.btn-area --></div><!-- /.css3panel-caption --></div><div class="css3panel css3panel--4 cp-theme--light"><div class="css3panel-inner" style=" height:400px " ><div class="css3panel-mainimage-wrapper" style=" height:400px " ><div style="background-image:url(http://egogc.com/propuestas/servivueltasdos/wp-content/uploads/2016/12/1-2.jpg); " class="css3panel-mainimage"><div class="css3p-overlay css3p--overlay-color" style="background: rgba(0,0,0,0.1)"></div></div></div></div><div class="css3panel-caption  "><h3 class="css3panel-title ff-alternative captiontitle--dbg title-size-normal">Pagamos tus servicios públicos, consignamos y recaudamos por ti</h3><div class="css3panel-btn-area"></div><!-- /.btn-area --></div><!-- /.css3panel-caption --></div>			</div>
+			<!-- end panels -->
+			<div class="clearfix"></div>
+
+			<div class="kl-bottommask kl-bottommask--shadow_ud"></div>
+
+		</div><!-- end kl-slideshow -->
+	<div id="eluid07760fba" class="zn_anchor_point "></div>		<section class="zn_section eluid393190c6     section--no " id="eluid393190c6" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluid12a14829  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			<div class="elm-stepsbox2 stepbox2 row eluid03682aae  stepsbox2--light"><div class="col-sm-12"><h3 class="m_title m_title_ext text-custom stepbox2-el-title">NUESTRO PROCESO</h3></div><div class="col-sm-12"><div class="row gutter-md"><div class="col-sm-4"><div class="gobox stepbox2-box u-trans-all-2s stepbox2-box-- gobox-first stepbox2-first "><div class="gobox-content stepbox2-content"><h4 class="stepbox2-title">Planeación y Estrategia</h4><a href="#"  class="zn_step_link stepbox2-link" title="" target="_blank"></a><div class="stepbox2-desc">Ingresa a nuestra plataforma digital por medio de tu teléfono móvil o por tu computador y solicita el servicio.</div></div></div></div><div class="col-sm-4"><div class="gobox stepbox2-box u-trans-all-2s stepbox2-box--  "><div class="gobox-content stepbox2-content"><h4 class="stepbox2-title">Desarrollo</h4><a href="#"  class="zn_step_link stepbox2-link" title="" target="_blank"></a><div class="stepbox2-desc">Un mensajero confiable estará en menos de 40 minutos en donde lo requieras.
+</div></div></div></div><div class="col-sm-4"><div class="gobox stepbox2-box u-trans-all-2s stepbox2-box--ok  gobox-last stepbox2-last"><span class="stepbox2-okicon glyphicon glyphicon-ok-circle"></span><div class="gobox-content stepbox2-content"><h4 class="stepbox2-title">Entrega Garantizada</h4><a href="#"  class="zn_step_link stepbox2-link" title="" target="_blank"></a><div class="stepbox2-desc">Podrás hacer seguimiento por medio de nuestra plataforma digital y saber el estado actual de tu servicio.
+</div></div></div></div></div></div></div>		</div>
+	
+				</div>
+			</div>
+
+            		</section>
+	<div id="empresas" class="zn_anchor_point "></div>		<section class="zn_section eluid904f057a     section--no " id="eluid904f057a" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluide2021e51  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			<div class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--line tbk--colored tbk-icon-pos--after-title eluidf88be740 "><h3 class="tbk__title ">SERVICIOS PARA <span class="text-custom fw-normal">EMPRESAS</span> </h3><span class="tbk__symbol "><span></span></span></div>		</div>
+	
+				</div>
+			</div>
+
+            		</section>
+			<div class="kl-slideshow kl-slideshow-css3panels eluid33a00982  css3p--flexbox">
+
+			<div class="clearfix"></div>
+			<div class="fake-loading loading-1s"></div>
+
+			<div class="css3panels-container css3panels--resize cssp-capt-animated cssp-capt-default" data-panels="5" style="height:400px">
+				<div class="css3panel css3panel--1 cp-theme--light"><div class="css3panel-inner" style=" height:400px " ><div class="css3panel-mainimage-wrapper" style=" height:400px " ><div style="background-image:url(http://servivueltas.net/wp-content/uploads/2018/12/editshutterstock_398159059.jpg); " class="css3panel-mainimage"><div class="css3p-overlay css3p--overlay-color" style="background: rgba(0,0,0,0.1)"></div></div></div></div><div class="css3panel-caption  "><h3 class="css3panel-title ff-alternative captiontitle--dbg title-size-normal">Servicio Outsourcing por horas, días, semanas y meses</h3><div class="css3panel-btn-area"></div><!-- /.btn-area --></div><!-- /.css3panel-caption --></div><div class="css3panel css3panel--2 cp-theme--light"><div class="css3panel-inner" style=" height:400px " ><div class="css3panel-mainimage-wrapper" style=" height:400px " ><div style="background-image:url(http://servivueltas.net/wp-content/uploads/2018/12/editshutterstock_98269457.jpg); " class="css3panel-mainimage"><div class="css3p-overlay css3p--overlay-color" style="background: rgba(0,0,0,0.1)"></div></div></div></div><div class="css3panel-caption  "><a href="#eluid7f5320f6"  class="" title="" data-lightbox="inline"><h3 class="css3panel-title ff-alternative captiontitle--dbg title-size-normal">Transporte y gestión de documentos Puerta a Puerta</h3></a><div class="css3panel-btn-area"></div><!-- /.btn-area --></div><!-- /.css3panel-caption --></div><div class="css3panel css3panel--3 cp-theme--light"><div class="css3panel-inner" style=" height:400px " ><div class="css3panel-mainimage-wrapper" style=" height:400px " ><div style="background-image:url(http://servivueltas.net/wp-content/uploads/2018/12/editshutterstock_361843610.jpg); " class="css3panel-mainimage"><div class="css3p-overlay css3p--overlay-color" style="background: rgba(0,0,0,0.1)"></div></div></div></div><div class="css3panel-caption  "><a href="#eluidf35bdea2"  class="" title="" data-lightbox="inline"><h3 class="css3panel-title ff-alternative captiontitle--dbg title-size-normal">Transporte y gestión de paquetes</h3></a><div class="css3panel-btn-area"></div><!-- /.btn-area --></div><!-- /.css3panel-caption --></div><div class="css3panel css3panel--4 cp-theme--light"><div class="css3panel-inner" style=" height:400px " ><div class="css3panel-mainimage-wrapper" style=" height:400px " ><div style="background-image:url(http://servivueltas.net/wp-content/uploads/2018/12/editshutterstock_302058209.jpg); " class="css3panel-mainimage"><div class="css3p-overlay css3p--overlay-color" style="background: rgba(0,0,0,0.1)"></div></div></div></div><div class="css3panel-caption  "><a href="#eluid0a18e2d7"  class="" title="" data-lightbox="inline"><h3 class="css3panel-title ff-alternative captiontitle--dbg title-size-normal">Logística de productos, mercancías e inventarios</h3></a><div class="css3panel-btn-area"></div><!-- /.btn-area --></div><!-- /.css3panel-caption --></div><div class="css3panel css3panel--5 cp-theme--light"><div class="css3panel-inner" style=" height:400px " ><div class="css3panel-mainimage-wrapper" style=" height:400px " ><div style="background-image:url(http://servivueltas.net/wp-content/uploads/2018/12/editshutterstock_379865653.jpg); " class="css3panel-mainimage"><div class="css3p-overlay css3p--overlay-color" style="background: rgba(0,0,0,0.1)"></div></div></div></div><div class="css3panel-caption  "><a href="#eluid592634d9"  class="" title="" data-lightbox="inline"><h3 class="css3panel-title ff-alternative captiontitle--dbg title-size-normal">Pagos, recaudos y consignaciones</h3></a><div class="css3panel-btn-area"></div><!-- /.btn-area --></div><!-- /.css3panel-caption --></div>			</div>
+			<!-- end panels -->
+			<div class="clearfix"></div>
+
+			<div class="kl-bottommask kl-bottommask--shadow_ud"></div>
+
+		</div><!-- end kl-slideshow -->
+	<div id="contacto" class="zn_anchor_point "></div>
+		<div class="zn_google_map kl-slideshow static-content__slideshow scontent__maps uh_zn_def_header_style eluidb5c7ec57   " >
+
+		    <div class="bgback"></div>
+		    <div class="th-sparkles"></div>
+
+			<!-- map container -->
+			<div id="zn_google_map_eluidb5c7ec57" class="zn_gmap_canvas th-google_map">
+							</div>
+
+			    			        <div class="kl-contentmaps__panel">
+
+			            			                <a href="#" class="js-toggle-class kl-contentmaps__panel-tgg hidden-xs" data-target=".kl-contentmaps__panel" data-target-class="is-closed"></a>
+			                <a href="http://servivueltas.net/wp-content/uploads/2018/12/miniLogotipo.jpg" data-lightbox="image" class="kl-contentmaps__panel-img" style="background-image:url(http://servivueltas.net/wp-content/uploads/2018/12/miniLogotipo.jpg)"></a>
+			            
+			            
+			                <div class="kl-contentmaps__panel-info">
+			                    <h5 class="kl-contentmaps__panel-title">Servivueltas</h5>			                    <div class="kl-contentmaps__panel-info-text">
+			                    <p>• Bogotá • Medellín • Cali</p>
+<p><strong>Asesoría comercial:</strong><a><br />
+<i class="fa fa-mobile " style="margin-right: 5px; margin-left: 5px;"></i> <strong>Cel:</strong> 311 586 0019 - 320 249 7821<br />
+<strong>PBX:</strong> (+57 1) </a><a>738 8479</a><br />
+<i class="fa fa-envelope" style="margin-right: 5px; margin-left: 5px;"></i> <strong> e-Mail: </strong>comercial@servivueltas.net</p>
+			                    </div>
+			                </div>
+			            			        </div>
+			    <div class="zn_header_bottom_style"></div>		</div>
+
+			<section class="zn_section eluidccca59aa     zn_section--masked zn_section--relative section--no " id="eluidccca59aa" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluide25730ef  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			<div class="statistic-box__container eluid748eb9eb  statistic-box--dark element-scheme--dark statistic-box--stl-style1" ><div class="statistic-box  ">
+							<div class="statistic-box__icon-holder statistic-box__icon-holder--img">
+								<img class="statistic-box__icon statistic-box__iconimg" src="http://servivueltas.net/wp-content/uploads/2017/01/clients.png" alt="">
+							</div>
+						<div class="statistic-box__line"></div><div class="statistic-box__details"><h4 class="statistic-box__title">220+</h4><div class="statistic-box__content">CLIENTES NACIONALES</div></div></div><div class="statistic-box statistic-box--odd ">
+							<div class="statistic-box__icon-holder statistic-box__icon-holder--img">
+								<img class="statistic-box__icon statistic-box__iconimg" src="http://servivueltas.net/wp-content/uploads/2017/01/rocket.png" alt="">
+							</div>
+						<div class="statistic-box__line"></div><div class="statistic-box__details"><h4 class="statistic-box__title">1490+</h4><div class="statistic-box__content">SERVICIOS DIARIOS</div></div></div><div class="statistic-box  ">
+							<div class="statistic-box__icon-holder statistic-box__icon-holder--img">
+								<img class="statistic-box__icon statistic-box__iconimg" src="http://servivueltas.net/wp-content/uploads/2017/01/moto.png" alt="">
+							</div>
+						<div class="statistic-box__line"></div><div class="statistic-box__details"><h4 class="statistic-box__title">92+</h4><div class="statistic-box__content">NUESTROS COLABORADORES</div></div></div></div>		</div>
+	
+				</div>
+			</div>
+
+            <div class="kl-bottommask kl-bottommask--shadow_simple_down kl-mask--light"></div>		</section>
+	<div id="unete" class="zn_anchor_point "></div>		<section class="zn_section eluidccd83f8b     zn_section--masked zn_section--relative section--no " id="eluidccd83f8b" >
+
+            <div class="kl-bg-source"><div class="kl-bg-source__bgimage" style="background-image:url(http://servivueltas.net/wp-content/uploads/2018/12/shutterstock_279463307.jpg);background-repeat:repeat;background-attachment:scroll;background-position:center top;background-size:cover"></div></div>
+			<div class="zn_section_size full_width">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluid81882e5e  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			<div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol-- tbk--colored tbk-icon-pos--after-title eluid0b0aae6a "><h3 class="tbk__title ">TRABAJA CON NOSOTROS</h3><h4 class="tbk__subtitle">Tu moto es la mejor compañía en tu trabajo.</h4></div>		</div>
+	
+		<div class="eluid0d027020  col-sm-offset-3  col-md-6 col-sm-6    zn_sortable_content zn_content " data-droplevel="2">
+			<div class="zn_custom_html eluid61827ca3"><div role="form" class="wpcf7" id="wpcf7-f1813-p1607-o1" lang="es-ES" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/#wpcf7-f1813-p1607-o1" method="post" class="wpcf7-form init" enctype="multipart/form-data" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="1813" />
+<input type="hidden" name="_wpcf7_version" value="5.5.5" />
+<input type="hidden" name="_wpcf7_locale" value="es_ES" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1813-p1607-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="1607" />
+<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+</div>
+<div class="col-sm-6 uno">
+<span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Ingresa tu Nombre" /></span><br />
+<span class="wpcf7-form-control-wrap tel-532"><input type="tel" name="tel-532" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Ingresa tu Teléfono" /></span>
+</div>
+<div class="col-sm-6 dos">
+<span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Ingresa tu e-Mail" /></span><br />
+<span class="wpcf7-form-control-wrap your-direccion"><input type="text" name="your-direccion" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Ingresa tu Dirección" /></span>
+</div>
+<div class="col-xs-12 col-sm-12">
+<span class="wpcf7-form-control-wrap file-3"><input type="file" name="file-3" size="40" class="wpcf7-form-control wpcf7-file" accept=".pdf,.doc,.jpg" aria-invalid="false" /></span>
+</div>
+<p><input type="submit" value="ÚNETE" class="wpcf7-form-control has-spinner wpcf7-submit" /></p>
+<p style="display: none !important;"><label>&#916;<textarea name="_wpcf7_ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="_wpcf7_ak_js" value="61"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p><div class="wpcf7-response-output" aria-hidden="true"></div></form></div></div>		</div>
+	
+				</div>
+			</div>
+
+            <div class="kl-bottommask kl-bottommask--shadow_simple_down kl-mask--light"></div>		</section>
+			<section class="zn_section eluid3ec5b68b  round-corners   zn_section--inlinemodal mfp-hide zn_section--stretch-container  section--no " id="eluid3ec5b68b" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluid0d587b65  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			<div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluid1a932416 "><h3 class="tbk__title ">CONTACTO CORPORATIVO</h3><h4 class="tbk__subtitle">Contáctanos para tener el mejor servicio en tu empresa</h4></div>
+		<div class="zn_contact_form_container contactForm cf-elm eluid6cf596db  cf--light element-scheme--light">
+						<form action="" method="post" class="zn_contact_form contact_form cf-elm-form row " data-redirect="http://servivueltas.net/"><p class="col-sm-6  kl-fancy-form zn_form_field zn_text"><input type="text" name="zn_form_field_nombre0" id="zn_form_field_nombre0" placeholder="Por favor ingresa tu nombre" value=""
+				class="zn_form_input zn-field-text form-control form-control--light kl-fancy-form-input zn_validate_not_empty"/><label for="zn_form_field_nombre0" class="control-label kl-font-alt kl-fancy-form-label">Nombre</label></p><p class="col-sm-6  kl-fancy-form zn_form_field zn_text"><input type="text" name="zn_form_field_compania1" id="zn_form_field_compania1" placeholder="Por favor ingresa tu compañia" value=""
+				class="zn_form_input zn-field-text form-control form-control--light kl-fancy-form-input zn_validate_not_empty"/><label for="zn_form_field_compania1" class="control-label kl-font-alt kl-fancy-form-label">Compañia</label></p><p class="col-sm-12  kl-fancy-form zn_form_field zn_text"><input type="text" name="zn_form_field_email2" id="zn_form_field_email2" placeholder="Por favor ingresa tu e-Mail" value=""
+				class="zn_form_input zn-field-text form-control form-control--light kl-fancy-form-input zn_validate_not_empty"/><label for="zn_form_field_email2" class="control-label kl-font-alt kl-fancy-form-label">Email</label></p><p class="col-sm-12  kl-fancy-form zn_form_field zn_textarea"><textarea name="zn_form_field_asunto3" class="zn_form_input form-control form-control--light kl-fancy-form-textarea zn_validate_not_empty"
+		id="zn_form_field_asunto3" placeholder="¿ Cuéntanos que necesitas ?" cols="40" rows="6"></textarea><label for="zn_form_field_asunto3" class="control-label kl-font-alt kl-fancy-form-label">asunto</label></p><p class="col-sm-6  kl-fancy-form zn_form_field zn_text"><input type="text" name="zn_form_field_telefono_fijo4" id="zn_form_field_telefono_fijo4" placeholder="Por favor ingresa tu teléfono" value=""
+				class="zn_form_input zn-field-text form-control form-control--light kl-fancy-form-input zn_validate_not_empty"/><label for="zn_form_field_telefono_fijo4" class="control-label kl-font-alt kl-fancy-form-label">TELÉFONO FIJO</label></p><p class="col-sm-6  kl-fancy-form zn_form_field zn_text"><input type="text" name="zn_form_field_celular5" id="zn_form_field_celular5" placeholder="Por favor ingresa tu celular" value=""
+				class="zn_form_input zn-field-text form-control form-control--light kl-fancy-form-input zn_validate_not_empty"/><label for="zn_form_field_celular5" class="control-label kl-font-alt kl-fancy-form-label">CELULAR</label></p><p class="col-sm-12  kl-fancy-form zn_form_field zn_hidden"><input type="hidden" name="zn_pb_form_submit_1" id="zn_pb_form_submit_1" value="" class="zn_form_input zn_validate_none" /></p><div class="col-sm-12"><div class="zn_contact_ajax_response titleColor" id="zn_form_id1" ></div> <span class="zn_submit_container"><button class="zn_contact_submit btn btn-fullcolor" type="submit">ENVIAR</button></span></div></form>
+		</div>
+
+			</div>
+	
+				</div>
+			</div>
+
+            		</section>
+	<div id="eluid160000aa" class="zn_anchor_point "></div>		<section class="zn_section eluida667c8b7  round-corners   zn_section--inlinemodal mfp-hide zn_section--stretch-container  section--no " id="eluida667c8b7" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluid484dfe06  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			<div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluidf4070dae "><h3 class="tbk__title ">CONTÁCTANOS</h3><h4 class="tbk__subtitle">El servicio que necesita para sus soluciones de mensajería.</h4></div>
+		<div class="zn_contact_form_container contactForm cf-elm eluidee2bb85d  cf--light element-scheme--light">
+						<form action="" method="post" class="zn_contact_form contact_form cf-elm-form row " data-redirect="http://servivueltas.net/"><p class="col-sm-6  kl-fancy-form zn_form_field zn_text"><input type="text" name="zn_form_field_nombre0" id="zn_form_field_nombre0" placeholder="Por favor ingresa tu nombre" value=""
+				class="zn_form_input zn-field-text form-control form-control--light kl-fancy-form-input zn_validate_not_empty"/><label for="zn_form_field_nombre0" class="control-label kl-font-alt kl-fancy-form-label">Nombre</label></p><p class="col-sm-6  kl-fancy-form zn_form_field zn_text"><input type="text" name="zn_form_field_compania1" id="zn_form_field_compania1" placeholder="Por favor ingresa tu compañía" value=""
+				class="zn_form_input zn-field-text form-control form-control--light kl-fancy-form-input zn_validate_not_empty"/><label for="zn_form_field_compania1" class="control-label kl-font-alt kl-fancy-form-label">Compañia</label></p><p class="col-sm-6  kl-fancy-form zn_form_field zn_text"><input type="text" name="zn_form_field_email2" id="zn_form_field_email2" placeholder="Por favor ingresa tu dirección" value=""
+				class="zn_form_input zn-field-text form-control form-control--light kl-fancy-form-input zn_validate_not_empty"/><label for="zn_form_field_email2" class="control-label kl-font-alt kl-fancy-form-label">Email</label></p><p class="col-sm-6  kl-fancy-form zn_form_field zn_text"><input type="text" name="zn_form_field_telefono3" id="zn_form_field_telefono3" placeholder="Por favor ingresa tu teléfono" value=""
+				class="zn_form_input zn-field-text form-control form-control--light kl-fancy-form-input zn_validate_not_empty"/><label for="zn_form_field_telefono3" class="control-label kl-font-alt kl-fancy-form-label">TELÉFONO</label></p><p class="col-sm-12  kl-fancy-form zn_form_field zn_textarea"><textarea name="zn_form_field_mensaje4" class="zn_form_input form-control form-control--light kl-fancy-form-textarea zn_validate_not_empty"
+		id="zn_form_field_mensaje4" placeholder="Por favor ingresa tu mensaje" cols="40" rows="6"></textarea><label for="zn_form_field_mensaje4" class="control-label kl-font-alt kl-fancy-form-label">Mensaje</label></p><p class="col-sm-12  kl-fancy-form zn_form_field zn_hidden"><input type="hidden" name="zn_pb_form_submit_2" id="zn_pb_form_submit_2" value="" class="zn_form_input zn_validate_none" /></p><div class="col-sm-12"><div class="zn_contact_ajax_response titleColor" id="zn_form_id2" ></div> <span class="zn_submit_container"><button class="zn_contact_submit btn btn-fullcolor" type="submit">ENVIAR</button></span></div></form>
+		</div>
+
+			</div>
+	
+				</div>
+			</div>
+
+            		</section>
+			<section class="zn_section eluid56fa9bb1  round-corners   zn_section--inlinemodal mfp-hide zn_section--stretch-container  section--no " id="eluid56fa9bb1" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluida5ca6738  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			<div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluid78cc0785 "><h3 class="tbk__title ">SOLICITA YA</h3><h4 class="tbk__subtitle">El aliado que necesitas para tus requerimientos de mensajería.</h4></div><div class="zn_custom_html eluidb1f5131d"><div role="form" class="wpcf7" id="wpcf7-f1845-p1607-o2" lang="es-ES" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/#wpcf7-f1845-p1607-o2" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="1845" />
+<input type="hidden" name="_wpcf7_version" value="5.5.5" />
+<input type="hidden" name="_wpcf7_locale" value="es_ES" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1845-p1607-o2" />
+<input type="hidden" name="_wpcf7_container_post" value="1607" />
+<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+</div>
+<h3 class="tbk__title ">SOLICITA YA!</h3>
+<h4 class="tbk__subtitle">El aliado que necesitas para tus requerimientos de mensajería.</h4>
+</div>
+<div class="zn_custom_html eluidb1f5131d">
+<div class="solicita">
+<div class="screen-reader-response"></div>
+<form name="FORMULARIO" id="FORMULARIO" method="POST" action="http://www.servivueltas.net/Mensajeria/Llega.php" class="alto">
+<div style="display: none;">
+					<input type="hidden" name="_wpcf7" value="1845"><br />
+					<input type="hidden" name="_wpcf7_version" value="4.5.1"><br />
+					<input type="hidden" name="_wpcf7_locale" value="es_ES"><br />
+					<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1845-p1607-o2"><br />
+					<input type="hidden" name="_wpnonce" value="53b5e121c6">
+				</div>
+<div class="col-xs-12 col-sm-12">
+					<span class="wpcf7-form-control-wrap ciudad"><br />
+						<select name="Ciudad_Recogida" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required ciudad" id="ciudad" required="true" aria-invalid="false"><br />
+							<option value="Bogotá">Bogotá</option><br />
+							<option value="Cali">Cali</option><br />
+							<option value="Medellín">Medellín</option><br />
+						</select><br />
+					</span> </p>
+</div>
+<div class="col-sm-6 dos"></div>
+<div class="col-xs-12 col-sm-12">
+					<label style="padding-top:5px; padding-bottom:5px; letter-spacing: 0.5px;"><i class="fa fa-clock-o" aria-hidden="true" style="margin-right:5px;"></i>Programar Servicio.  Lun-Vie: 8:00am  -  5:00pm  Sab: 8:00am  -  12:00m  </label></p>
+</div>
+<div class="col-sm-6 uno">
+					<span class="wpcf7-form-control-wrap date-460"><br />
+						<input type="date" name="Fecha_Servicio" value="" style="padding-top: 25px; padding-bottom: 25px;" required="true" class="form-control inputbox kl-fancy-form-input kl-fw-input" aria-invalid="false" id="fecha" min=<?php $hoy=date("Y-m-d"); echo $hoy;?> onchange="cambio();" /><br />
+					</span></p>
+<p>					<span class="wpcf7-form-control-wrap dire-rec"><br />
+						<input type="text" name="Direccion_Recogida" value="" style="padding-top: 25px;<br />
+    padding-bottom: 25px;" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="dirRec" required="true" aria-invalid="false" placeholder="Dirección de inicio"><br />
+					</span>
+				</div>
+<div class="col-sm-6 dos">
+					<span class="wpcf7-form-control-wrap hora" ><br />
+						<select name="Horax" placeholder="8:00AM - 9:00AM" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required hora" id="hora" aria-invalid="false" required="true"><br />
+							<option value="">Seleccione Hora</option><br />
+							<option value="08:00AM - 9:00AM">8:00AM - 9:00AM</option><br />
+							<option value="09:00AM - 10:00AM">9:00AM - 10:00AM</option><br />
+							<option value="10:00AM - 11:00AM">10:00AM - 11:00AM</option><br />
+							<option value="11:00AM - 12:00M">11:00AM - 12:00M</option><br />
+							<option value="12:00M - 1:00PM">12:00M - 1:00PM</option><br />
+							<option value="13:00PM - 2:00PM">1:00PM - 2:00PM</option><br />
+							<option value="14:00PM - 3:00PM">2:00PM - 3:00PM</option><br />
+							<option value="15:00PM - 4:00PM">3:00PM - 4:00PM</option><br />
+							<option value="16:00PM - 5:00PM">4:00PM - 5:00PM</option><br />
+							<option value="17:00PM - 6:00PM">5:00PM - 6:00PM</option><br />
+						</select><br />
+					</span></p>
+<p>
+						<span class="wpcf7-form-control-wrap dire-envio"><br />
+							<input type="text" name="Direccion_Entrega" value="" style="padding-top: 25px; padding-bottom: 25px;" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="dirEnv" required="true" aria-invalid="false" placeholder="Dirección final"><br />
+						</span>
+					</p>
+<div class="check">
+						<span class="wpcf7-form-control-wrap ida-vuelta"><br />
+							<span class="wpcf7-form-control wpcf7-checkbox check"><br />
+								<span class="wpcf7-list-item first last"><br />
+									<label><br />
+										<input id="check" type="checkbox" name="IdayVue" value="2">&nbsp;<br />
+										<span class="wpcf7-list-item-label">ida y vuelta</span><br />
+									</label><br />
+								</span><br />
+							</span><br />
+						</span>
+					</div>
+</div>
+<div class="col-xs-12 col-sm-12">
+					<span class="wpcf7-form-control-wrap descripcion"><br />
+						<textarea name="Descripcion" cols="40" rows="10" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="des" aria-invalid="false" required="false" placeholder="Descripción del servicio"></textarea><br />
+					</span></p>
+</p>
+</div>
+<div class="col-sm-6 uno cinco">
+					<span class="wpcf7-form-control-wrap desti"><br />
+						<input type="text"  name="Nombre_Destinatario" value="" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="desti" required="true" aria-invalid="false" placeholder="Destinatario" style="padding-top: 25px;<br />
+    padding-bottom: 25px;"><br />
+					</span>
+				</div>
+<div class="col-sm-6 dos">
+					<span class="wpcf7-form-control-wrap monto"><br />
+						<input type="number" style="padding-top: 25px;<br />
+    padding-bottom: 25px;"  name="Recibido" value="" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="monto" aria-invalid="false" placeholder="Monto a transportar"><br />
+					</span>
+				</div>
+<div class="col-xs-12 col-sm-12">
+<p>					<label style="padding-top:5px; padding-bottom:5px;"><i class="fa fa-user" aria-hidden="true" style="margin-right:5px;"></i>Datos Personales<br />
+					</label></p>
+</div>
+<div class="col-sm-6 uno">
+					<span class="wpcf7-form-control-wrap your-name"><br />
+						<input type="text" style="padding-top: 25px;<br />
+    padding-bottom: 25px;"  name="Nombre_Solicitante"  value="" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="nombre" required="true" aria-invalid="false" placeholder="Ingresa tu nombre"><br />
+					</span></p>
+<p>					<span class="wpcf7-form-control-wrap tel-532"><br />
+						<input type="text"  style="padding-top: 25px;<br />
+    padding-bottom: 25px;"  name="Telefono_Solicitante" value="" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="telefono" required="true" aria-invalid="false" placeholder="Ingresa tu teléfono"><br />
+					</span>
+				</div>
+<div class="col-sm-6 dos">
+					<span class="wpcf7-form-control-wrap monto"><br />
+						<input type="text" style="padding-top: 25px; padding-bottom: 25px;"   value="" class="form-control inputbox kl-fancy-form-input kl-fw-input" required="true" name="cc_nit"  id="cc_nit" aria-invalid="false" placeholder="Nit/cc"><br />
+					</span></p>
+<p>					<span class="wpcf7-form-control-wrap your-email"><br />
+						<input type="email" style="padding-top: 25px;<br />
+    padding-bottom: 25px;"   name="Email" value="" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="email" required="true" aria-invalid="false" placeholder="Ingresa tu e-Mail"><br />
+					</span></p>
+</div>
+<div class="col-sm-6 uno">
+					<span class="wpcf7-form-control-wrap tel-532"><br />
+						<input type="number" style="padding-top: 25px;<br />
+    padding-bottom: 25px;"  name="Celular_Solicitante" value="" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="telefono" required="true" aria-invalid="false" placeholder="Ingresa tu celular"><br />
+					</span></p>
+</div>
+<div class="col-xs-12 col-sm-12"></div>
+<div class="col-sm-6 uno">
+					<label style="padding-top:15px; padding-bottom:15px; margin-left:15px; text-transform:uppercase;">Valor total del servicio</label>
+				</div>
+<div class="col-sm-6 dos">
+					<label id="precio"  style="padding: 14px;">$16.000</label></p>
+</div>
+<p><br></p>
+<div class="col-xs-12 col-sm-12">
+					<input type="checkbox" checkbox-77="" name="Acepto" class:condiciones="" id="chec" checked=""><br />
+						<a href="http://egogc.com/propuestas/servivueltasdos/terminos.html" target="_blank">Acepto los términos y condiciones</a>
+				</div>
+<div class="col-xs-12 col-sm-12">
+<p>
+				    <input type="submit" class="btn zn_sub_button btn-fullcolor btn-md" id="confirmar" value="CONFIRMAR SOLICITUD"/>
+				</p>
+</div>
+<div class="wpcf7-response-output wpcf7-display-none"></div>
+</form>
+</div>
+<p style="display: none !important;"><label>&#916;<textarea name="_wpcf7_ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_2" name="_wpcf7_ak_js" value="226"/><script>document.getElementById( "ak_js_2" ).setAttribute( "value", ( new Date() ).getTime() );</script></p><div class="wpcf7-response-output" aria-hidden="true"></div></form></div></div>		</div>
+	
+				</div>
+			</div>
+
+            		</section>
+			<section class="zn_section eluid5a4359e4  round-corners   zn_section--inlinemodal mfp-hide zn_section--stretch-container  section--no " id="eluid5a4359e4" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluid1d6b1067  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			<div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluidc0b6c3c0 "><h3 class="tbk__title ">ENVÍA</h3><h4 class="tbk__subtitle">El aliado que necesitas para tus requerimientos de mensajería.</h4></div>
+		<div class="zn_contact_form_container contactForm cf-elm eluid64e6d5f7  cf--light element-scheme--light">
+						<form action="" method="post" class="zn_contact_form contact_form cf-elm-form row " data-redirect=""><p class="col-sm-6  kl-fancy-form zn_form_field zn_select"><label class="control-label kl-font-alt kl-fancy-form-label">Ciudad</label><select name="zn_form_field_ciudad0" id="zn_form_field_ciudad0" class="zn_form_input form-control form-control--light kl-fancy-form-select zn_validate_not_empty"><option value="bogotá" >Bogotá</option><option value="cali" >Cali</option><option value="medellín" >Medellín</option></select></p><p class="col-sm-6  kl-fancy-form zn_form_field zn_text"><input type="text" name="zn_form_field_direccion1" id="zn_form_field_direccion1" placeholder="Por favor ingresa su dirección" value=""
+				class="zn_form_input zn-field-text form-control form-control--light kl-fancy-form-input zn_validate_not_empty"/><label for="zn_form_field_direccion1" class="control-label kl-font-alt kl-fancy-form-label">Dirección</label></p><p class="col-sm-6  kl-fancy-form zn_form_field zn_text"><input type="text" name="zn_form_field_fecha2" id="zn_form_field_fecha2" placeholder="Por favor ingrese fecha" value=""
+				class="zn_form_input zn-field-text form-control form-control--light kl-fancy-form-input zn_validate_not_empty"/><label for="zn_form_field_fecha2" class="control-label kl-font-alt kl-fancy-form-label">Fecha</label></p><p class="col-sm-6  kl-fancy-form zn_form_field zn_text"><input type="text" name="zn_form_field_hora3" id="zn_form_field_hora3" placeholder="Por favor ingrese la hora" value=""
+				class="zn_form_input zn-field-text form-control form-control--light kl-fancy-form-input zn_validate_not_empty"/><label for="zn_form_field_hora3" class="control-label kl-font-alt kl-fancy-form-label">Hora</label></p><p class="col-sm-6  kl-fancy-form zn_form_field zn_select"><label class="control-label kl-font-alt kl-fancy-form-label">Servicio</label><select name="zn_form_field_servicio4" id="zn_form_field_servicio4" class="zn_form_input form-control form-control--light kl-fancy-form-select zn_validate_not_empty"><option value="envíos" >Envíos</option><option value="vueltas" >Vueltas</option></select></p><p class="col-sm-6  kl-fancy-form zn_form_field zn_text"><input type="text" name="zn_form_field_telefono5" id="zn_form_field_telefono5" placeholder="Por favor ingrese su teléfono" value=""
+				class="zn_form_input zn-field-text form-control form-control--light kl-fancy-form-input zn_validate_not_empty"/><label for="zn_form_field_telefono5" class="control-label kl-font-alt kl-fancy-form-label">Teléfono</label></p><p class="col-sm-12  kl-fancy-form zn_form_field zn_hidden"><input type="hidden" name="zn_pb_form_submit_3" id="zn_pb_form_submit_3" value="" class="zn_form_input zn_validate_none" /></p><div class="col-sm-12"><div class="zn_contact_ajax_response titleColor" id="zn_form_id3" ></div> <span class="zn_submit_container"><button class="zn_contact_submit btn btn-fullcolor" type="submit">ENVÍA</button></span></div></form>
+		</div>
+
+			</div>
+	
+				</div>
+			</div>
+
+            		</section>
+			<section class="zn_section eluid6af4513b     zn_section--inlinemodal mfp-hide zn_section--stretch-container  section--no " id="eluid6af4513b" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluidc6f9a054  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			
+<div class="grid-ibx grid-ibx--cols-2 grid-ibx--style-lined-center grid-ibx--hover-shadow eluidea9a85d8  grid-ibx--theme-light element-scheme--light">
+	<div class="grid-ibx__inner">
+		<div class="grid-ibx__row clearfix">
+					<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/3.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Solicitud de certificados y actas</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+							<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/7.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Apostillaje de documentos</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+			</div><!-- /.grid-ibx__row --><div class="grid-ibx__row clearfix">				<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/8.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Radicación de documentos</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+							<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/9.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Recogida y entrega de documentos y visas</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+			
+	</div><!-- /.grid-ibx__row -->
+	</div>
+</div><!-- /.grid-ibx -->
+
+		</div>
+	
+				</div>
+			</div>
+
+            		</section>
+			<section class="zn_section eluid3b7fd00e     zn_section--inlinemodal mfp-hide zn_section--stretch-container  section--no " id="eluid3b7fd00e" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluiddcc39301  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			
+<div class="grid-ibx grid-ibx--cols-1 grid-ibx--style-lined-center grid-ibx--hover-shadow eluid10c63de9  grid-ibx--theme-light element-scheme--light">
+	<div class="grid-ibx__inner">
+		<div class="grid-ibx__row clearfix">
+					<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/6.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Regalos y tarjetas</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+			</div><!-- /.grid-ibx__row --><div class="grid-ibx__row clearfix">				<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/4.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Equipos electrónicos</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+			</div><!-- /.grid-ibx__row --><div class="grid-ibx__row clearfix">				<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/5.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Otros</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+			
+	</div><!-- /.grid-ibx__row -->
+	</div>
+</div><!-- /.grid-ibx -->
+
+		</div>
+	
+				</div>
+			</div>
+
+            		</section>
+			<section class="zn_section eluidf35bdea2     zn_section--inlinemodal mfp-hide zn_section--stretch-container  section--no " id="eluidf35bdea2" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluid3e4e5a59  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			
+<div class="grid-ibx grid-ibx--cols-1 grid-ibx--style-lined-center grid-ibx--hover-shadow eluidc78d0a4d  grid-ibx--theme-light element-scheme--light">
+	<div class="grid-ibx__inner">
+		<div class="grid-ibx__row clearfix">
+					<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/6.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Regalos y tarjetas</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+			</div><!-- /.grid-ibx__row --><div class="grid-ibx__row clearfix">				<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/4.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Equipos electrónicos</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+			</div><!-- /.grid-ibx__row --><div class="grid-ibx__row clearfix">				<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/5.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Otros</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+			
+	</div><!-- /.grid-ibx__row -->
+	</div>
+</div><!-- /.grid-ibx -->
+
+		</div>
+	
+				</div>
+			</div>
+
+            		</section>
+			<section class="zn_section eluid0a18e2d7     zn_section--inlinemodal mfp-hide zn_section--stretch-container  section--no " id="eluid0a18e2d7" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluid1e6e5e51  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			
+<div class="grid-ibx grid-ibx--cols-1 grid-ibx--style-lined-center grid-ibx--hover-shadow eluid5626b9c5  grid-ibx--theme-light element-scheme--light">
+	<div class="grid-ibx__inner">
+		<div class="grid-ibx__row clearfix">
+					<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/9.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Recogida y entrega de  productos y mercancías</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+			</div><!-- /.grid-ibx__row --><div class="grid-ibx__row clearfix">				<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/8.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Control de inventarios</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+			</div><!-- /.grid-ibx__row --><div class="grid-ibx__row clearfix">				<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/3.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Almacenamiento</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+			
+	</div><!-- /.grid-ibx__row -->
+	</div>
+</div><!-- /.grid-ibx -->
+
+		</div>
+	
+				</div>
+			</div>
+
+            		</section>
+			<section class="zn_section eluid592634d9     zn_section--inlinemodal mfp-hide zn_section--stretch-container  section--no " id="eluid592634d9" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluid47e93f4d  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			
+<div class="grid-ibx grid-ibx--cols-1 grid-ibx--style-lined-center grid-ibx--hover-shadow eluid444d6ad1  grid-ibx--theme-light element-scheme--light">
+	<div class="grid-ibx__inner">
+		<div class="grid-ibx__row clearfix">
+					<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/8.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Recogida y entrega de Cheques</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+			</div><!-- /.grid-ibx__row --><div class="grid-ibx__row clearfix">				<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/5.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Consignaciones </p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+			</div><!-- /.grid-ibx__row --><div class="grid-ibx__row clearfix">				<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/9.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Recaudos</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+			
+	</div><!-- /.grid-ibx__row -->
+	</div>
+</div><!-- /.grid-ibx -->
+
+		</div>
+	
+				</div>
+			</div>
+
+            		</section>
+			<section class="zn_section eluid7f5320f6     zn_section--inlinemodal mfp-hide zn_section--stretch-container  section--no " id="eluid7f5320f6" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluid23a6468e  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			
+<div class="grid-ibx grid-ibx--cols-3 grid-ibx--style-lined-center grid-ibx--hover-shadow eluid5fa9a077  grid-ibx--theme-light element-scheme--light">
+	<div class="grid-ibx__inner">
+		<div class="grid-ibx__row clearfix">
+					<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/8.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Solicitud de certificados y actas</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+							<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/7.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Apostillaje de documentos</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+							<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/10.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Radicación de documentos y facturas con visto de sellado</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+			</div><!-- /.grid-ibx__row --><div class="grid-ibx__row clearfix">				<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/9.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Recogida y entrega de documentos empresariales</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+							<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/5.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Afiliaciones EPS y ARL</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+							<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/11.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Servicio de camioneta</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+			
+	</div><!-- /.grid-ibx__row -->
+	</div>
+</div><!-- /.grid-ibx -->
+
+		</div>
+	
+				</div>
+			</div>
+
+            		</section>
+			<section class="zn_section eluid11ec32b7     zn_section--inlinemodal mfp-hide zn_section--stretch-container  section--no " id="eluid11ec32b7" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluidb0ab36cd  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			
+<div class="grid-ibx grid-ibx--cols-2 grid-ibx--style-lined-center grid-ibx--hover-shadow eluid94d1f9b6  grid-ibx--theme-light element-scheme--light">
+	<div class="grid-ibx__inner">
+		<div class="grid-ibx__row clearfix">
+					<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/6.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Recogemos y entregamos a tus clientes tus productos</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+							<div class="grid-ibx__item grid-ibx__item--type-img">
+										<div class="grid-ibx__item-inner">
+						
+												<div class="grid-ibx__icon-wrp">
+						<img class="grid-ibx__icon" src="http://servivueltas.net/wp-content/uploads/2017/01/8.png" alt="">						</div>
+						
+						
+												<div class="grid-ibx__desc-wrp">
+							<p class="grid-ibx__desc">Almacenamos y entregamos de acuerdo a tus pedidos</p>
+						</div>
+						
+						
+					</div>
+				</div><!-- /.grid-ibx__item -->
+			
+	</div><!-- /.grid-ibx__row -->
+	</div>
+</div><!-- /.grid-ibx -->
+
+		</div>
+	
+				</div>
+			</div>
+
+            		</section>
+			<section class="zn_section eluid49fd4110     zn_section--inlinemodal mfp-hide zn_section--stretch-container  section--no " id="eluid49fd4110" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluid5d266079  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			<div class="zn_custom_html eluiddf912ee2"><h3 class="m_title_ext auth-popup-title" itemprop="alternativeHeadline">INICIAR SESIÓN</h3>
+<form name="FORMULARIO" id="FORMULARIO" method="POST" action="/wp-content/themes/kallyas/components/theme-header/envio.php">
+<div class="form-group kl-fancy-form">    
+<input type="text" id="kl-username" name="Usuario" class="form-control inputbox kl-fancy-form-input kl-fw-input"
+placeholder="escriba su usuario"/>
+<label class="kl-font-alt kl-fancy-form-label">USUARIO</label>
+</div>
+<div class="form-group kl-fancy-form">
+<input type="password" id="kl-password" name="Contrasena" class="form-control inputbox kl-fancy-form-input kl-fw-input"
+placeholder="escriba su contraseña"/>
+<label class="kl-font-alt kl-fancy-form-label">CONTRASEÑA</label>
+</div>
+<input type="submit" value="Ingresar" class="btn zn_sub_button btn-fullcolor btn-md"/>
+</form></div>		</div>
+	
+				</div>
+			</div>
+
+            		</section>
+			<section class="zn_section eluid4a352633     zn_section--inlinemodal mfp-hide zn_section--stretch-container  section--no " id="eluid4a352633" >
+
+            
+			<div class="zn_section_size container">
+				<div class="row zn_columns_container zn_content " data-droplevel="1">
+
+					
+		<div class="eluidff6fda42  col-md-12 col-sm-12    zn_sortable_content zn_content " data-droplevel="2">
+			<div class="zn_custom_html eluide0c9ebb9"><div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluid78cc0785 ">
+	<h3 class="tbk__title ">SOLICITA YA</h3>
+	<h4 class="tbk__subtitle">El aliado que necesitas para tus requerimientos de mensajería.</h4>
+</div>
+<div class="zn_custom_html eluidb1f5131d">
+		<div class="solicita">
+			<div class="screen-reader-response"></div>
+			<form name="FORMULARIO" id="FORMULARIO" method="POST" action="/Mensajeria/EClave.php">
+			    <div style="display: none;">
+					<input type="hidden" name="_wpcf7" value="1845"/>
+					<input type="hidden" name="_wpcf7_version" value="4.5.1"/>
+					<input type="hidden" name="_wpcf7_locale" value="es_ES"/>
+					<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1845-p1607-o2"/>
+					<input type="hidden" name="_wpnonce" value="53b5e121c6"/>
+				</div>
+				<div class="col-xs-12 col-sm-12">
+					<span class="wpcf7-form-control-wrap ciudad">
+						<select name="ciudad" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required ciudad" id="ciudad" aria-required="true" aria-invalid="false">
+							<option value="Bogotá">Bogotá</option>
+							<option value="Cali">Cali</option>
+							<option value="Medellín">Medellín</option>
+						</select>
+					</span>
+					<p></p>
+				</div>
+				<div class="col-sm-6 dos"></div>
+				<div class="col-xs-12 col-sm-12">
+					<label style="padding-top:5px; padding-bottom:5px;"><i class="fa fa-clock-o" aria-hidden="true" style="margin-right:5px;"></i>Programar Servicio </label>
+					<p></p>
+				</div>
+				<div class="col-sm-6 uno">
+					<span class="wpcf7-form-control-wrap date-460">
+						<input type="date" name="date-460" value="" style="padding-top: 25px;
+    padding-bottom: 25px;" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="fecha" aria-invalid="false"/>
+					</span>
+					<p></p>
+					<span class="wpcf7-form-control-wrap dire-rec">
+						<input type="text" name="dire-rec" value="" style="padding-top: 25px;
+    padding-bottom: 25px;" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="dirRec" aria-required="true" aria-invalid="false" placeholder="Dirección de inicio"/>
+					</span>
+				</div>
+				<div class="col-sm-6 dos">
+					<span class="wpcf7-form-control-wrap hora">
+						<select name="hora" placeholder="8:00AM - 9:00AM" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required hora" id="hora" aria-invalid="false">
+							<option value="8:00AM - 9:00AM">8:00AM - 9:00AM</option>
+							<option value="9:00AM - 10:00AM">9:00AM - 10:00AM</option>
+							<option value="10:00AM - 11:00AM">10:00AM - 11:00AM</option>
+							<option value="11:00AM - 12:00M">11:00AM - 12:00M</option>
+							<option value="12:00M - 1:00PM">12:00M - 1:00PM</option>
+							<option value="1:00PM - 2:00PM">1:00PM - 2:00PM</option>
+							<option value="2:00PM - 3:00PM">2:00PM - 3:00PM</option>
+							<option value="3:00PM - 4:00PM">3:00PM - 4:00PM</option>
+							<option value="4:00PM - 5:00PM">4:00PM - 5:00PM</option>
+							<option value="5:00PM - 6:00PM">5:00PM - 6:00PM</option>
+						</select>
+					</span>
+					<p></p>
+					<p>
+						<span class="wpcf7-form-control-wrap dire-envio">
+							<input type="text" name="dire-envio" value="" style="padding-top: 25px;
+    padding-bottom: 25px;" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="dirEnv" aria-required="true" aria-invalid="false" placeholder="Dirección final"/>
+						</span>
+					</p>
+					<div class="check">
+						<span class="wpcf7-form-control-wrap ida-vuelta">
+							<span class="wpcf7-form-control wpcf7-checkbox check">
+								<span class="wpcf7-list-item first last">
+									<label>
+										<input type="checkbox" name="ida-vuelta[]" value="ida y vuelta"/>&nbsp;
+										<span class="wpcf7-list-item-label">ida y vuelta</span>
+									</label>
+								</span>
+							</span>
+						</span>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12">
+					<span class="wpcf7-form-control-wrap descripcion">
+						<textarea name="descripcion" cols="40" rows="10" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="des" aria-invalid="false" placeholder="Descripción del servicio"></textarea>
+					</span>
+						<p></p>
+					<p></p>
+				</div>
+			
+				<div class="col-sm-6 uno">
+					<span class="wpcf7-form-control-wrap desti">	
+						<input type="text"  name="desti" value="" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="desti" aria-required="true" aria-invalid="false" placeholder="Destinatario" style="padding-top: 25px;
+    padding-bottom: 25px;"/>
+					</span>
+				</div>
+				<div class="col-sm-6 dos">
+					<span class="wpcf7-form-control-wrap monto">
+						<input type="number" style="padding-top: 25px;
+    padding-bottom: 25px;"  name="monto" value="" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="monto" aria-invalid="false" placeholder="Monto a transportar"/>
+					</span>
+				</div>
+				<div class="col-xs-12 col-sm-12">
+				    	<p></p>
+					<label style="padding-top:5px; padding-bottom:5px;"><i class="fa fa-user" aria-hidden="true" style="margin-right:5px;"></i>Datos Personales 
+					</label>
+					<p></p>
+				</div>
+				<div class="col-sm-6 uno">
+					<span class="wpcf7-form-control-wrap your-name">
+						<input type="text" style="padding-top: 25px;
+    padding-bottom: 25px;"  name="your-name" value="" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="nombre" aria-required="true" aria-invalid="false" placeholder="Ingresa tu nombre"/>
+					</span>
+					<p></p>
+					<span class="wpcf7-form-control-wrap tel-532">
+						<input type="tel"  style="padding-top: 25px;
+    padding-bottom: 25px;"  name="tel-532" value="" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="telefono" aria-required="true" aria-invalid="false" placeholder="Ingresa tu teléfono"/>
+					</span>
+				</div>
+				<div class="col-sm-6 dos">
+					<span class="wpcf7-form-control-wrap your-email">
+						<input type="email" style="padding-top: 25px;
+    padding-bottom: 25px;"   name="your-email" value="" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="email" aria-required="true" aria-invalid="false" placeholder="Ingresa tu e-Mail"/>
+					</span>
+					<p></p>
+					<span class="wpcf7-form-control-wrap tel-532">
+						<input type="tel" style="padding-top: 25px;
+    padding-bottom: 25px;"  name="tel-532" value="" size="40" class="form-control inputbox kl-fancy-form-input kl-fw-input" id="telefono" aria-required="true" aria-invalid="false" placeholder="Ingresa tu celular"/>
+					</span>
+						
+					<p></p>
+				</div>
+				<div class="col-xs-12 col-sm-12"></div>
+				<div class="col-sm-6 uno">
+					<label style="padding-top:15px; padding-bottom:15px; margin-left:15px; text-transform:uppercase;">Valor total del servicio</label>
+				</div>
+				<div class="col-sm-6 dos">
+					<label id="precio" style="padding: 14px;">0</label>
+						
+					<p></p>
+				</div>
+				<p><br /></p>
+				<div class="col-xs-12 col-sm-12">
+					<input type="checkbox" checkbox-77="" class:condiciones="" id="chec" checked=""/>
+						<a href="http://egogc.com/propuestas/servivueltasdos/terminos.html" target="_blank">Acepto los términos y condiciones</a>
+				</div>
+				<div class="col-xs-12 col-sm-12">
+				<p>
+				    <input type="submit" class="btn zn_sub_button btn-fullcolor btn-md" id="confirmar" value="CONFIRMAR SOLICITUD"/>
+				</p>
+				</div>
+				<div class="wpcf7-response-output wpcf7-display-none"></div>
+					
+			</form>
+		</div>
+	</div></div>		</div>
+	
+				</div>
+			</div>
+
+            		</section>
+	</div>	<footer id="footer" class="site-footer" >
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="bottom site-footer-bottom clearfix">
+
+						
+						<ul class="social-icons sc--clean clearfix"><li class="social-icons-li title">SOCIALÍZATE</li><li class="social-icons-li"><a data-zniconfam="kl-social-icons" data-zn_icon="" href="https://www.facebook.com/servivueltascol/?fref=ts" target="_blank" title="Facebook!" class="social-icons-item scfooter-icon-"></a></li><li class="social-icons-li"><a data-zniconfam="kl-social-icons" data-zn_icon="" href="https://twitter.com/servivueltascol?lang=es" target="_blank" title="Twitter!" class="social-icons-item scfooter-icon-"></a></li></ul>						
+							<div class="copyright footer-copyright">
+								<p class="footer-copyright-text">© 2016 All rights reserved Servivueltas. Design By <a href="http://www.casoft.com.co/" target="_blank">SERVIVUELTAS.NET</a>.</p>							</div><!-- end copyright -->
+											</div>
+
+					<!-- end bottom -->
+				</div>
+			</div>
+			<!-- end row -->
+		</div>
+	</footer>
+</div><!-- end page_wrapper -->
+
+		<div class="fsi-icons fsi-social-icons-right">
+		
+		</div>
+		<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-88180746-1', 'auto');
+ga('send', 'pageview');
+</script><script type='text/javascript' src='https://servivueltas.net/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://servivueltas.net/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/servivueltas.net\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://servivueltas.net/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.5.5' id='contact-form-7-js'></script>
+<script type='text/javascript' id='spu-public-js-extra'>
+/* <![CDATA[ */
+var spuvar = {"is_admin":"","disable_style":"","ajax_mode":"","ajax_url":"https:\/\/servivueltas.net\/wp-admin\/admin-ajax.php","ajax_mode_url":"https:\/\/servivueltas.net\/?spu_action=spu_load","pid":"1607","is_front_page":"1","is_category":"","site_url":"https:\/\/servivueltas.net","is_archive":"","is_search":"","is_preview":"","seconds_confirmation_close":"5"};
+var spuvar_social = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://servivueltas.net/wp-content/plugins/popups/public/assets/js/public.js?ver=1.9.3.8' id='spu-public-js'></script>
+<script type='text/javascript' src='https://servivueltas.net/wp-content/themes/kallyas/js/plugins.js?ver=4.0.11' id='jquery-plugins-js'></script>
+<script type='text/javascript' src='https://servivueltas.net/wp-content/themes/kallyas/addons/smoothscroll/smoothscroll.js?ver=4.0.11' id='smoothscroll-js'></script>
+<script type='text/javascript' id='zn-script-js-extra'>
+/* <![CDATA[ */
+var zn_do_login = {"ajaxurl":"\/wp-admin\/admin-ajax.php","add_to_cart_text":"\u00a1Producto a\u00f1adido al carrito!"};
+var ZnThemeAjax = {"ajaxurl":"\/wp-admin\/admin-ajax.php","zn_back_text":"Back","res_menu_trigger":"992"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://servivueltas.net/wp-content/themes/kallyas/js/znscript.js?ver=4.0.11' id='zn-script-js'></script>
+<script type='text/javascript' src='https://servivueltas.net/wp-content/themes/kallyas/addons/caroufredsel/jquery.carouFredSel-packed.js?ver=4.0.11' id='caroufredsel-js'></script>
+<script type='text/javascript' src='https://servivueltas.net/wp-content/plugins/easy-fancybox/js/jquery.fancybox.min.js?ver=1.3.24' id='jquery-fancybox-js'></script>
+<script type='text/javascript' id='jquery-fancybox-js-after'>
+var fb_timeout, fb_opts={'overlayShow':true,'hideOnOverlayClick':true,'showCloseButton':true,'margin':20,'centerOnScroll':false,'enableEscapeButton':true,'autoScale':true };
+if(typeof easy_fancybox_handler==='undefined'){
+var easy_fancybox_handler=function(){
+jQuery('.nofancybox,a.wp-block-file__button,a.pin-it-button,a[href*="pinterest.com/pin/create"],a[href*="facebook.com/share"],a[href*="twitter.com/share"]').addClass('nolightbox');
+/* IMG */
+var fb_IMG_select='a[href*=".jpg"]:not(.nolightbox,li.nolightbox>a),area[href*=".jpg"]:not(.nolightbox),a[href*=".jpeg"]:not(.nolightbox,li.nolightbox>a),area[href*=".jpeg"]:not(.nolightbox),a[href*=".png"]:not(.nolightbox,li.nolightbox>a),area[href*=".png"]:not(.nolightbox),a[href*=".webp"]:not(.nolightbox,li.nolightbox>a),area[href*=".webp"]:not(.nolightbox)';
+jQuery(fb_IMG_select).addClass('fancybox image');
+var fb_IMG_sections=jQuery('.gallery,.wp-block-gallery,.tiled-gallery,.wp-block-jetpack-tiled-gallery');
+fb_IMG_sections.each(function(){jQuery(this).find(fb_IMG_select).attr('rel','gallery-'+fb_IMG_sections.index(this));});
+jQuery('a.fancybox,area.fancybox,li.fancybox a').each(function(){jQuery(this).fancybox(jQuery.extend({},fb_opts,{'transitionIn':'elastic','easingIn':'easeOutBack','transitionOut':'elastic','easingOut':'easeInBack','opacity':false,'hideOnContentClick':false,'titleShow':true,'titlePosition':'over','titleFromAlt':true,'showNavArrows':true,'enableKeyboardNav':true,'cyclic':false}))});};
+jQuery('a.fancybox-close').on('click',function(e){e.preventDefault();jQuery.fancybox.close()});
+};
+var easy_fancybox_auto=function(){setTimeout(function(){jQuery('#fancybox-auto').trigger('click')},1000);};
+jQuery(easy_fancybox_handler);jQuery(document).on('post-load',easy_fancybox_handler);
+jQuery(easy_fancybox_auto);
+</script>
+<script type='text/javascript' src='https://servivueltas.net/wp-content/plugins/easy-fancybox/js/jquery.easing.min.js?ver=1.4.1' id='jquery-easing-js'></script>
+<script type='text/javascript' src='https://servivueltas.net/wp-content/plugins/easy-fancybox/js/jquery.mousewheel.min.js?ver=3.1.13' id='jquery-mousewheel-js'></script>
+<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyA3Kk5ekG4CH4A1ESgYSddfUkzT4h4582s#038;language=es&amp;ver=4.0.11' id='zn_google_api-js'></script>
+<script type='text/javascript' src='https://servivueltas.net/wp-content/themes/kallyas/pagebuilder/elements/google_map/assets/gmaps.js?ver=4.0.11' id='zn_gmap-js'></script>
+<script type='text/javascript' id='zn_recaptcha-js-extra'>
+/* <![CDATA[ */
+var zn_contact_form = {"captcha_not_filled":"Please complete the Captcha validation"};
+var zn_contact_form = {"captcha_not_filled":"Please complete the Captcha validation"};
+var zn_contact_form = {"captcha_not_filled":"Please complete the Captcha validation"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&#038;render=explicit&#038;ver=4.0.11' id='zn_recaptcha-js'></script>
+<script type='text/javascript' id='tidio-live-chat-js-before'>
+document.tidioChatCode = "gidjz4bh9ryteh6t4n2egld72nkuecgf";
+</script>
+<script type='text/javascript' src='//code.tidio.co/gidjz4bh9ryteh6t4n2egld72nkuecgf.js?ver=5.0.0' id='tidio-live-chat-js'></script>
+<!-- Zn Framework inline JavaScript--><script type="text/javascript">jQuery(document).ready(function($) {
+
+							var zn_google_map_eluidb5c7ec57 = new Zn_google_map('zn_google_map_eluidb5c7ec57', [6.21667 , -75.6], '', [[6.21667 ,-75.6,'<p>Medellin</p>','http://egogc.com/propuestas/servivueltasdos/wp-content/uploads/2015/12/map-marker.png',20,'DROP',],[4.6097100,-74.0817500,'<p>Bogotá</p>','http://egogc.com/propuestas/servivueltasdos/wp-content/uploads/2015/12/map-marker.png',20,'DROP',],[3.43722,-76.5225,'<p>Cali</p>','http://egogc.com/propuestas/servivueltasdos/wp-content/uploads/2015/12/map-marker.png',20,'DROP',],], 'ROADMAP', 7, false, null, null, true, true, true);
+							zn_google_map_eluidb5c7ec57.init_map();
+
+						
+});</script><a href="#" id="totop" class="u-trans-all-2s js-scroll-event" data-forch="300" data-visibleclass="on--totop" data-hiddenclass="off--totop" >SUBIR</a>
+<p class="TK">Powered by <a href="http://themekiller.com/" title="themekiller" rel="follow"> themekiller.com </a> </p>
+</body>
+</html>
